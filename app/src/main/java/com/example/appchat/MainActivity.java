@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import com.example.appchat.Frag.FragExtend;
 import com.example.appchat.Frag.FragPhotoImage;
+import com.example.appchat.Frag.LoginFrag;
 
 public class MainActivity extends AppCompatActivity {
     private EditText editText;
@@ -19,20 +20,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragPhotoImage fragPhotoImage = new FragPhotoImage();
-        final FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.change_frag_collapse,fragPhotoImage,FragPhotoImage.class.getName());
-        fragmentTransaction.commit();
-        editText = findViewById(R.id.edit_text_chat);
-        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean hasClick) {
-                FragExtend fragExtend = new FragExtend();
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.change_frag_collapse,fragExtend)
-                        .addToBackStack(null).commit();
-            }
-        });
+        getSupportFragmentManager().beginTransaction().replace(R.id.content
+                ,new LoginFrag()
+                ,LoginFrag.class.getName())
+                .commit();
+//
+//        FragPhotoImage fragPhotoImage = new FragPhotoImage();
+//        final FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//        fragmentTransaction.add(R.id.change_frag_collapse,fragPhotoImage,FragPhotoImage.class.getName());
+//        fragmentTransaction.commit();
+//        editText = findViewById(R.id.edit_text_chat);
+//        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View view, boolean hasClick) {
+//                FragExtend fragExtend = new FragExtend();
+//                getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.change_frag_collapse,fragExtend)
+//                        .addToBackStack(null).commit();
+//            }
+//        });
     }
 }

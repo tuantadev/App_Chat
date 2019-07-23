@@ -1,6 +1,11 @@
 package com.example.appchat.Frag;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,69 +15,49 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatEditText;
 import androidx.fragment.app.Fragment;
 
 
 import com.example.appchat.R;
 
+import java.nio.charset.Charset;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LoginFrag extends Fragment implements View.OnClickListener {
-    private Button login;
-    private Button register;
-    private Button keep_sign_in;
-    private TextView forget;
-    private TextView username_login,password_login;
+public class LoginFrag extends Fragment implements View.OnClickListener, TextWatcher {
+    private Button login, register, keep_sign_in;
+    private TextView forget, txtcheckValidation;
+    private AppCompatEditText txtusername_login, txtpassword_login;
+    private String strPwdLogin, strUserLogin;
+    private View view;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = View.inflate(getContext(), R.layout.frag_login,container);
+        view = inflater.inflate(R.layout.frag_login, container, false);
+        init();
+        return view;
+    }
+
+    private void init() {
         view.findViewById(R.id.login_frag_login).setOnClickListener(this);
         view.findViewById(R.id.register_of_frag_login).setOnClickListener(this);
         keep_sign_in = view.findViewById(R.id.keep_sign_in);
         keep_sign_in.setOnClickListener(this);
         view.findViewById(R.id.forget).setOnClickListener(this);
-        username_login = view.findViewById(R.id.username_login);
-        password_login = view.findViewById(R.id.password_login);
-        return view;
+        txtusername_login = view.findViewById(R.id.username_login);
+        txtpassword_login = view.findViewById(R.id.password_login);
+        txtcheckValidation = view.findViewById(R.id.txtcheckValidate);
+        txtusername_login.addTextChangedListener(this);
+        strPwdLogin = txtpassword_login.getText().toString().trim();
     }
-    public boolean emailValidator(String email)
-    {
-        Pattern pattern;
-        Matcher matcher;
-        final String EMAIL_PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-        pattern = Pattern.compile(EMAIL_PATTERN);
-        matcher = pattern.matcher(email);
-        return matcher.matches();
-    }
-    public boolean phonenumberValidator(String phone){
-        Pattern pattern;
-        Matcher matcher;
-        final String MOBILE_PATTERN = "[0-9]{10}";
-        pattern = Pattern.compile(MOBILE_PATTERN);
-        matcher = pattern.matcher(phone);
-        return matcher.matches();
-    }
+
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.login_frag_login:
-                if (username_login.getText().toString().trim() == null
-                        || password_login.getText().toString().trim() == null
-                        || !emailValidator(username_login.getText().toString())
-                        ||!phonenumberValidator(username_login.getText().toString())){
-                    Toast.makeText(getContext(),"username or password invalid"
-                            ,Toast.LENGTH_LONG)
-                            .show();
-                }else {
-                    Toast.makeText(getContext(),"login success"
-                            ,Toast.LENGTH_LONG).show();
-                    getFragmentManager().beginTransaction().replace(R.id.login_frag_login
-                            ,new ChatMainFragment()
-                            ,ChatMainFragment.class.getName())
-                            .commit();
-                }
+                checkLoginSuccess();
                 break;
             case R.id.register_of_frag_login:
                 break;
@@ -82,4 +67,71 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
                 break;
         }
     }
+
+    @Override
+    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int i, int i1, int i2) {
+        checkValidationUsername(s);
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable editable) {
+
+    }
+
+    private void checkLoginSuccess() {
+//        if (!validPhone && validEmail) {
+//            checkValidation.setText("The phone number you entered " +
+//                    "doesn't appear to belong to an account" +
+//                    ".Please check your phone number and try again");
+//        }
+//        if (!validEmail && validPhone) {
+//            checkValidation.setText("The email you enterd " +
+//                    "doesn't appear to belong to an account" +
+//                    ".Please check your email address and try again");
+//        }
+//        if (!validpwd) {
+//            checkValidation.setText("The password you enterd is incorrect" +
+//                    ". Please try again");
+//        } else {
+//            getFragmentManager().beginTransaction().replace(R.id.contentLogin
+//                    , new ChatMainFragment()
+//                    , ChatMainFragment.class.getName())
+//                    .commit();
+//        }
+//
+
+    }
+
+    private void checkValidationUsername(CharSequence s) {
+        txtcheckValidation.setText("");
+        strUserLogin = txtusername_login.getText().toString().trim();
+        boolean isValidateEmail = Patterns.EMAIL_ADDRESS.matcher(strUserLogin).matches();
+        boolean isValidatePhone = Patterns.PHONE.matcher(strUserLogin).matches()
+                && s.length() > 9 && s.length() < 11;
+        if (!isValidateEmail && !isValidatePhone) {
+            txtcheckValidation.setText("InValid Email or Phone no ");
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

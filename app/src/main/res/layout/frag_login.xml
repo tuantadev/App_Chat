@@ -1,89 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentLogin"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_weight="2"
-        android:layout_marginTop="32dp"
         android:layout_width="wrap_content"
-        android:text="Login"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="64sp"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="32dp"
+        android:layout_weight="2"
+        android:text="Login"
+        android:textSize="64sp" />
 
-    <EditText
-        android:layout_weight="0"
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/username_login"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:background="@drawable/box_edittext"
-        android:hint="username"
-        android:gravity="center"
-        android:textSize="24sp"
-        android:layout_height="wrap_content"/>
-
-    <EditText
         android:layout_weight="0"
+        android:background="@drawable/box_edittext"
+        android:gravity="center"
+        android:hint="username"
+        android:textSize="24sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/password_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:layout_weight="0"
         android:background="@drawable/box_edittext"
         android:gravity="center"
         android:hint="password"
+        android:inputType="textPassword"
         android:textSize="24sp" />
 
-    <LinearLayout
-        android:layout_weight="1"
+    <TextView
+        android:id="@+id/txtcheckValidate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:minHeight="2dp"
+        android:textColor="@color/red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
         <Button
             android:id="@+id/keep_sign_in"
-            android:layout_marginLeft="16dp"
             android:layout_width="46dp"
-            android:layout_height="46dp" />
+            android:layout_height="46dp"
+            android:layout_marginLeft="16dp" />
 
         <TextView
-            android:layout_marginLeft="16dp"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:text="Keep me signed in"
-            android:textSize="16sp"
-            android:layout_height="wrap_content" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
     <Button
-        android:layout_weight="0"
         android:id="@+id/login_frag_login"
-        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
-        android:background="@drawable/box_edittext"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Sign in"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="16dp"
+        android:layout_weight="0"
+        android:background="@drawable/box_edittext"
+        android:text="Sign in" />
 
     <Button
-        android:layout_weight="0"
         android:id="@+id/register_of_frag_login"
-        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
-        android:background="@drawable/box_edittext"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Register"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="16dp"
+        android:layout_weight="0"
+        android:background="@drawable/box_edittext"
+        android:text="Register" />
 
     <TextView
         android:id="@+id/forget"
-        android:layout_weight="1"
-        android:layout_marginTop="32dp"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
         android:text="forgot my password?"
-        android:textSize="16sp"
-        android:layout_height="wrap_content" />
+        android:textSize="16sp" />
 
 </LinearLayout>

@@ -805,6 +805,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1266,6 +1267,7 @@ id clip_vertical
 id collapseActionView
 id container
 id content
+id contentLogin
 id contentPanel
 id coordinator
 id cos
@@ -1478,6 +1480,7 @@ id transition_transform
 id triangle
 id tv_name
 id tv_username
+id txtcheckValidate
 id uniform
 id unlabeled
 id up
