@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<MotionScene
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@layout/frag_collapse_meta_end"
+        app:constraintSetStart="@layout/frag_setting_friend_chat"
+        app:duration="500"
+        motion:interpolator="linear">
+
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@+id/line1"
+            app:touchAnchorSide="top" />
+
+    </Transition>
+
+</MotionScene>

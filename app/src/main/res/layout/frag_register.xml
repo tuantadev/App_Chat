@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Sign Up"
+        android:textSize="46sp"
+        android:layout_marginBottom="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/username_register"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/box_edittext"
+        android:hint="username"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/box_edittext"
+        android:hint="password"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/re_password_register"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/box_edittext"
+        android:hint="re-password"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/box_edittext"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
