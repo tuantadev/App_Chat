@@ -31,6 +31,12 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
     @Override
     public void onBindViewHolder(@NonNull HolderFriend holder, int position) {
         FriendResponse data = iFriend.getItem(position);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         Glide.with(holder.ivAvatar)
                 .load(data.getFriendAvatar())
                 .into(holder.ivAvatar);

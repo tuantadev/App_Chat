@@ -1,16 +1,12 @@
 package com.example.appchat;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import com.example.appchat.ui.adapter.ChatMainFragment;
+import com.example.appchat.ui.frag.ChatMainFragment;
 import com.example.appchat.ui.frag.LoginFrag;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +14,17 @@ public class MainActivity extends AppCompatActivity {
         openLogin();
     }
 
-    private void openLogin(){
-        getSupportFragmentManager().beginTransaction().add(R.id.content,new LoginFrag(),LoginFrag.class.getName());
+    public void openLogin(){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.content,new LoginFrag(),LoginFrag.class.getName())
+                .commit();
     }
 
-    private void openChat(){
-        getSupportFragmentManager().beginTransaction().add(R.id.content,new ChatMainFragment(),LoginFrag.class.getName());
-
+    public void openChat(){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content,new ChatMainFragment(),LoginFrag.class.getName())
+                .commit();
     }
 }

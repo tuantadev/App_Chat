@@ -13,14 +13,14 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface UserService {
-    @GET(value = "/getAllFriendUser")
-    Call<List<FriendResponse>> getAllFriendUser();
-
-    @GET(value = "/getAllInfoUser")
-    Call<List<UserProfile>> getAllInfoUser(
-            @Query("id") int id
-    );
-    @GET(value = "/login")
+//    @GET(value = "/getAllFriendUser")
+//    Call<List<FriendResponse>> getAllFriendUser();
+//
+//    @GET(value = "/getAllInfoUser")
+//    Call<List<UserProfile>> getAllInfoUser(
+//            @Query("id") int id
+//    );
+    @GET(value = "/loggin")
     Call<BaseResponse<UserProfile>> getInfoLogin(
             @Body LoginRequest loginRequest
     );

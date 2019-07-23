@@ -58,7 +58,7 @@
 
     <Button
         android:layout_weight="0"
-        android:id="@+id/login_frag_login"
+        android:id="@+id/btn_login"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:background="@drawable/box_edittext"
@@ -68,7 +68,7 @@
 
     <Button
         android:layout_weight="0"
-        android:id="@+id/register_of_frag_login"
+        android:id="@+id/btn_register"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:background="@drawable/box_edittext"

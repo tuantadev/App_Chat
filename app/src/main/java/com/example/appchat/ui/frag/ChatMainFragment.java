@@ -1,4 +1,4 @@
-package com.example.appchat.ui.adapter;
+package com.example.appchat.ui.frag;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.appchat.R;
 import com.example.appchat.model.FriendResponse;
 import com.example.appchat.interact.UserService;
+import com.example.appchat.ui.adapter.FriendAdapter;
 
 import java.util.List;
 
@@ -33,7 +34,6 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag_main,container,false);
-        getAllFriend();
         rcFriend = view.findViewById(R.id.rc_friend);
         rcFriend.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new FriendAdapter(this);
@@ -53,27 +53,27 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
 
     }
 
-    private void getAllFriend() {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.12.100:8080")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        UserService userService =
-                retrofit.create(UserService.class);
-        userService.getAllFriendUser()
-                .enqueue(new Callback<List<FriendResponse>>() {
-                    @Override
-                    public void onResponse(Call<List<FriendResponse>> call, Response<List<FriendResponse>> response) {
-                        friendResponses = response.body();
-                        adapter.notifyDataSetChanged();
-                    }
-
-                    @Override
-                    public void onFailure(Call<List<FriendResponse>> call, Throwable t) {
-                        t.printStackTrace();
-                    }
-                });
-    }
+//    private void getAllFriend() {
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("http://192.168.12.100:8080")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//        UserService userService =
+//                retrofit.create(UserService.class);
+//        userService.getAllFriendUser()
+//                .enqueue(new Callback<List<FriendResponse>>() {
+//                    @Override
+//                    public void onResponse(Call<List<FriendResponse>> call, Response<List<FriendResponse>> response) {
+//                        friendResponses = response.body();
+//                        adapter.notifyDataSetChanged();
+//                    }
+//
+//                    @Override
+//                    public void onFailure(Call<List<FriendResponse>> call, Throwable t) {
+//                        t.printStackTrace();
+//                    }
+//                });
+//    }
 
     @Override
     public int getCount() {
