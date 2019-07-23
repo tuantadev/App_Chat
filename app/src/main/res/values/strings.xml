@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Appchat</string>
+    <string name="tab_one">Tab One</string>
+    <string name="tab_two">Tab Two</string>
+    <string name="tab_three">Tab Three</string>
+</resources>
