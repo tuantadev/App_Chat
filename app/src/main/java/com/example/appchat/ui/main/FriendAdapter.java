@@ -1,4 +1,4 @@
-package com.example.appchat.ui.adapter;
+package com.example.appchat.ui.chat;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.appchat.R;
-import com.example.appchat.model.FriendResponse;
+import com.example.appchat.model.response.FriendResponse;
 
 
 public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFriend> {

@@ -21,6 +21,7 @@ import com.example.appchat.R;
 import com.example.appchat.model.BaseResponse;
 import com.example.appchat.model.UserProfile;
 import com.example.appchat.model.request.LoginRequest;
+import com.example.appchat.socket.SocketManager;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -76,9 +77,10 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
         loginRequest.setPassword(password_login.getText().toString());
         switch (view.getId()){
             case R.id.btn_login:
-                userService.getInfoLogin(loginRequest).enqueue(new Callback<BaseResponse<UserProfile>>() {
+                userService.postInfoLogin(loginRequest).enqueue(new Callback<BaseResponse<UserProfile>>() {
                     @Override
-                    public void onResponse(Call<BaseResponse<UserProfile>> call, Response<BaseResponse<UserProfile>> response) {
+                    public void onResponse(Call<BaseResponse<UserProfile>> call,
+                                           Response<BaseResponse<UserProfile>> response) {
                         if (response.body().getStatus()!=1){
                             Toast.makeText(getContext(),response.body().getMessage(),Toast.LENGTH_SHORT);
                         }else {
@@ -124,6 +126,7 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
 
     private void loginSuccess(UserProfile userProfile){
         CommonData.getInstance().setUserProfile(userProfile);
+        SocketManager.getInstance().connect();
         ((MainActivity)getActivity()).openChat();
     }
 }
