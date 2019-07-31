@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.appchat.R;
+import com.example.appchat.interact.CommonData;
 import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.model.response.MessageChatResponse;
 import com.example.appchat.socket.ReceiverMess;
