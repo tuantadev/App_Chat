@@ -1,4 +1,4 @@
-package com.example.appchat.ui.frag;
+package com.example.appchat.ui.setting;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,11 +12,12 @@ import androidx.fragment.app.Fragment;
 import com.example.appchat.R;
 
 
-public class FragExtend extends Fragment {
+public class SettingFriendActionFrag extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.frag_collapse,container,false);
+        View view = View.inflate(getContext(), R.layout.frag_setting_friend_chat,container);
+        return view;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.appchat.ui.frag;
+package com.example.appchat.ui.chat;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,12 +12,11 @@ import androidx.fragment.app.Fragment;
 import com.example.appchat.R;
 
 
-public class ManagerUserProfileFrag extends Fragment {
+public class FragExtend extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = View.inflate(getContext(), R.layout.frag_manager_user_profile, container);
-        return view;
+        return inflater.inflate(R.layout.frag_collapse,container,false);
     }
 }
