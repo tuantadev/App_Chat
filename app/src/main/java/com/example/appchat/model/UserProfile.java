@@ -1,11 +1,13 @@
 package com.example.appchat.model;
 
+import java.util.Date;
+
 public class UserProfile {
     private int id;
     private String username;
     private String password;
     private String avatar;
-    private long createdTime;
+    private Date createdTime;
 
     public int getId() {
         return id;
@@ -39,11 +41,4 @@ public class UserProfile {
         this.avatar = avatar;
     }
 
-    public long getCreatedTime() {
-        return createdTime;
-    }
-
-    public void setCreatedTime(long createdTime) {
-        this.createdTime = createdTime;
-    }
 }

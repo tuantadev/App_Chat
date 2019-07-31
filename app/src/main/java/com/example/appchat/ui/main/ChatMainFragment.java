@@ -1,5 +1,6 @@
-package com.example.appchat.ui.chat;
+package com.example.appchat.ui.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,11 +14,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.appchat.Common;
-import com.example.appchat.CommonData;
+import com.example.appchat.interact.CommonData;
 import com.example.appchat.R;
 import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.interact.UserService;
+import com.example.appchat.ui.chat.Chat;
 
+import java.io.Serializable;
 import java.util.List;
 
 import retrofit2.Call;
@@ -90,5 +93,13 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
         return friendResponses.get(pos);
     }
 
+    @Override
+    public void onClickItem(int pos) {
+        Intent intent = new Intent();
+        intent.setClass(getContext(), Chat.class);
+        intent.putExtra("FRIEND",
+                (Serializable) friendResponses.get(pos));
+        startActivity(intent);
+    }
 
 }

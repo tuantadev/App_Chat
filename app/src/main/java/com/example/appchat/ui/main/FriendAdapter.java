@@ -1,4 +1,4 @@
-package com.example.appchat.ui.chat;
+package com.example.appchat.ui.main;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +29,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HolderFriend holder, int position) {
+    public void onBindViewHolder(@NonNull final HolderFriend holder, int position) {
         FriendResponse data = iFriend.getItem(position);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +46,12 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
         holder.tvName.setText(
                 data.getNickname()
         );
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                iFriend.onClickItem(holder.getAdapterPosition());
+            }
+        });
     }
 
     @Override
@@ -56,6 +62,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
     public interface IFriend{
         int getCount();
         FriendResponse getItem(int pos);
+        void onClickItem(int pos);
     }
 
     static class HolderFriend extends RecyclerView.ViewHolder {

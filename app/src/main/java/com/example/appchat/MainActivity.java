@@ -2,8 +2,8 @@ package com.example.appchat;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.appchat.ui.frag.ChatMainFragment;
-import com.example.appchat.ui.frag.LoginFrag;
+import com.example.appchat.ui.main.ChatMainFragment;
+import com.example.appchat.ui.begin.LoginFrag;
 
 public class MainActivity extends AppCompatActivity {
 

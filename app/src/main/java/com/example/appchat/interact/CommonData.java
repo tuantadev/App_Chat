@@ -1,4 +1,4 @@
-package com.example.appchat;
+package com.example.appchat.interact;
 
 import com.example.appchat.model.UserProfile;
 

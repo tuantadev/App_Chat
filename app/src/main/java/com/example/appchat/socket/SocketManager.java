@@ -1,20 +1,100 @@
 package com.example.appchat.socket;
 
+import android.util.Log;
+import com.example.appchat.interact.CommonData;
 import com.example.appchat.interact.Constant;
+import com.example.appchat.model.response.MessageChatResponse;
+import com.google.gson.Gson;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
 
-public class SocketIO {
-    private static  String CHAT_SERVER_URL = "https://socket-io-chat.now.sh/";
+import io.socket.client.IO;
+import io.socket.client.Socket;
+import io.socket.emitter.Emitter;
 
-    private void  openSocket() {
+public class SocketManager {
+
+    private static final String TAG = "SocketManager";
+    private io.socket.client.Socket socket;
+    private List<ReceiverMess> receiverMesses = new ArrayList<>();
+    private static SocketManager instance;
+
+    public static SocketManager getInstance() {
+        if (instance == null) {
+            instance = new SocketManager();
+        }
+        return instance;
+    }
+
+    private SocketManager() {
+
+    }
+
+    public void disconnect() {
+        if (socket != null) {
+            socket.disconnect();
+            socket = null;
+        }
+    }
+
+    public void connect() {
         try {
-            ServerSocket serverSocket = new ServerSocket(8080);
-            Socket socket = serverSocket.accept();
-        } catch (IOException e) {
+            socket = IO.socket(Constant.URL_SOCKET);
+            socket.on(io.socket.client.Socket.EVENT_CONNECT, new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    Log.d(TAG, "EVENT_CONNECT: " + args);
+                    socket.emit("connected",
+                            CommonData.getInstance()
+                                    .getUserProfile()
+                                    .getId() + "");
+                }
+            });
+            socket.on(io.socket.client.Socket.EVENT_DISCONNECT, new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    Log.d(TAG, "EVENT_DISCONNECT: " + args);
+                }
+            });
+            socket.on(Socket.EVENT_CONNECT_ERROR, new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    Log.d(TAG, "EVENT_CONNECT_ERROR: " + args);
+                }
+            });
+
+            socket.on("message", new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    receiveMessage((String) args[0]);
+                }
+            });
+            socket.connect();
+        } catch (URISyntaxException e) {
             e.printStackTrace();
         }
+    }
+
+    private void receiveMessage(String s) {
+        MessageChatResponse messageChatResponse = new Gson().fromJson(s,MessageChatResponse.class);
+        for(ReceiverMess receiverMess : receiverMesses){
+            receiverMess.receieve(messageChatResponse);
+        }
+    }
+
+    public void sendMessage(String toJson) {
+        if ( socket != null){
+            socket.emit("message", toJson);
+        }
+    }
+
+    public void register(ReceiverMess reciverMessage){
+        receiverMesses.add(reciverMessage);
+    }
+
+    public void unregister(ReceiverMess reciverMessage){
+        receiverMesses.remove(reciverMessage);
     }
 }

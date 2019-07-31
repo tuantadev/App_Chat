@@ -1,11 +1,10 @@
-package com.example.appchat.ui.frag;
+package com.example.appchat.ui.begin;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -14,17 +13,14 @@ import androidx.fragment.app.Fragment;
 
 
 import com.example.appchat.Common;
-import com.example.appchat.CommonData;
+import com.example.appchat.interact.CommonData;
 import com.example.appchat.MainActivity;
 import com.example.appchat.interact.UserService;
 import com.example.appchat.R;
-import com.example.appchat.model.BaseResponse;
+import com.example.appchat.model.response.BaseResponse;
 import com.example.appchat.model.UserProfile;
 import com.example.appchat.model.request.LoginRequest;
 import com.example.appchat.socket.SocketManager;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import retrofit2.Call;
 import retrofit2.Callback;

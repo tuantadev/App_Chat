@@ -1,19 +1,27 @@
-package com.example.appchat.model;
+package com.example.appchat.model.response;
 
 public class FriendResponse {
     private int id;
+    private int friendId;
+
+    public int getFriendId() {
+        return friendId;
+    }
+
+    public void setFriendId(int friendId) {
+        this.friendId = friendId;
+    }
+
     private String friendUsername;
+    private String nickname;
+    private String friendAvatar;
 
     public String getNickname() {
         return nickname;
     }
-
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
-
-    private String nickname;
-    private String friendAvatar;
 
     public String getFriendUsername() {
         return friendUsername;
