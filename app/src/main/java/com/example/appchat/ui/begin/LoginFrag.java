@@ -78,7 +78,7 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
                     public void onResponse(Call<BaseResponse<UserProfile>> call,
                                            Response<BaseResponse<UserProfile>> response) {
                         if (response.body().getStatus()!=1){
-                            Toast.makeText(getContext(),response.body().getMessage(),Toast.LENGTH_SHORT);
+                                Toast.makeText(getContext(),response.body().getMessage(),Toast.LENGTH_SHORT);
                         }else {
                             loginSuccess(response.body().getData());
                         }

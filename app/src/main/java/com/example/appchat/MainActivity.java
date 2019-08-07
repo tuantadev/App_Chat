@@ -7,6 +7,8 @@ import com.example.appchat.ui.begin.LoginFrag;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String NICKNAME = "usernickname";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

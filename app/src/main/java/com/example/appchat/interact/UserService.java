@@ -20,11 +20,6 @@ public interface UserService {
             @Query("id") int id
     );
 
-//    @GET(value = "/getAllInfoUser")
-//    Call<List<UserProfile>> getAllInfoUser(
-//            @Query("id") int id
-//    );
-
     @POST(value = "/login")
     Call<BaseResponse<UserProfile>> postInfoLogin(
             @Body LoginRequest loginRequest
