@@ -68,6 +68,7 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
                     }
                     @Override
                     public void onFailure(Call<BaseResponse<UserProfile>> call, Throwable t) {
+                        System.out.println("connect is fail");
                     }
                 });
                 break;

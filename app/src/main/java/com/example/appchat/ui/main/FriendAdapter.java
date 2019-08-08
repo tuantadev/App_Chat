@@ -37,7 +37,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
 
             }
         });
-        Glide.with(holder.ivAvatar)
+        Glide.with(holder.itemView.getContext())
                 .load(data.getFriendAvatar())
                 .into(holder.ivAvatar);
         holder.tvUsername.setText(

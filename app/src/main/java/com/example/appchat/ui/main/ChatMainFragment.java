@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.Glide;
 import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.R;
@@ -33,10 +35,18 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
     private List<FriendResponse> friendResponses;
     private FriendAdapter adapter;
     private UserService userService;
+    private ImageView avatar;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag_main,container,false);
+        avatar = view.findViewById(R.id.avatar_main);
+        Glide.with(this)
+                .load(CommonData.getInstance().getUserProfile().getAvatar())
+                .centerCrop()
+                .placeholder(R.drawable.default_ava)
+                .into(avatar)
+        ;
         return view;
     }
 
