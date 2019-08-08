@@ -59,7 +59,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
                     .placeholder(R.drawable.default_ava)
                     .into((ImageView) findViewById(R.id.iv_avatar));
         }
-        ((TextView) findViewById(R.id.name_or_nickname)).setText(friendResponse.getNickname());
+        ((TextView) findViewById(R.id.name_or_nickname)).setText(friendResponse.getFriendNameofchat());
     }
 
     @Override

@@ -76,35 +76,35 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
                     break;
         }
 //        switch (view.getId()){
-////            case R.id.login_frag_login:
-////                if (username_login.getText().toString().trim() == null
-////                        || password_login.getText().toString().trim() == null
-////                        || !emailValidator(username_login.getText().toString())
-////                        ||!phonenumberValidator(username_login.getText().toString())){
-////                    Toast.makeText(getContext(),"username or password invalid"
-////                            ,Toast.LENGTH_LONG)
-////                            .show();
-////                }else {
-////                    Toast.makeText(getContext(),"login success"
-////                            ,Toast.LENGTH_LONG).show();
-////                    getFragmentManager().beginTransaction().replace(R.id.login_frag_login
-////                            ,new ChatMainFragment()
-////                            ,ChatMainFragment.class.getName())
-////                            .commit();
-////                }
-////                break;
-////            case R.id.register_of_frag_login:
-////                break;
-////            case R.id.keep_sign_in:
-////                break;
-////            case R.id.forget:
-////                break;
-//
-//        }
+//////            case R.id.login_frag_login:
+//////                if (username_login.getText().toString().trim() == null
+//////                        || password_login.getText().toString().trim() == null
+//////                        || !emailValidator(username_login.getText().toString())
+//////                        ||!phonenumberValidator(username_login.getText().toString())){
+//////                    Toast.makeText(getContext(),"username or password invalid"
+//////                            ,Toast.LENGTH_LONG)
+//////                            .show();
+//////                }else {
+//////                    Toast.makeText(getContext(),"login success"
+//////                            ,Toast.LENGTH_LONG).show();
+//////                    getFragmentManager().beginTransaction().replace(R.id.login_frag_login
+//////                            ,new ChatMainFragment()
+//////                            ,ChatMainFragment.class.getName())
+//////                            .commit();
+//////                }
+//////                break;
+//////            case R.id.register_of_frag_login:
+//////                break;
+//////            case R.id.keep_sign_in:
+//////                break;
+//////            case R.id.forget:
+//////                break;
+////
+////        }
     }
     private void loginSuccess(UserProfile userProfile){
         CommonData.getInstance().setUserProfile(userProfile);
-        SocketManager.getInstance().connect();
+//        SocketManager.getInstance().connect();
         ((MainActivity)getActivity()).openMainChat();
     }
     //    public boolean emailValidator(String email)

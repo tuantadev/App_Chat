@@ -1,8 +1,12 @@
 package com.example.appchat.model.response;
 
 public class FriendResponse {
+
     private int id;
     private int friendId;
+    private String friendNameofchat;
+    private String friendUsername;
+    private String friendAvatar;
 
     public int getFriendId() {
         return friendId;
@@ -12,15 +16,12 @@ public class FriendResponse {
         this.friendId = friendId;
     }
 
-    private String friendUsername;
-    private String nickname;
-    private String friendAvatar;
-
-    public String getNickname() {
-        return nickname;
+    public String getFriendNameofchat() {
+        return friendNameofchat;
     }
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+
+    public void setFriendNameofchat(String friendNameofchat) {
+        this.friendNameofchat = friendNameofchat;
     }
 
     public String getFriendUsername() {

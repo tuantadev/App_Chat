@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.R;
+import com.example.appchat.model.response.BaseResponse;
 import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.interact.UserService;
 import com.example.appchat.ui.chat.Chat;
@@ -36,10 +37,11 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
     private FriendAdapter adapter;
     private UserService userService;
     private ImageView avatar;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.frag_main,container,false);
+        View view = inflater.inflate(R.layout.frag_main, container, false);
         avatar = view.findViewById(R.id.avatar_main);
         Glide.with(this)
                 .load(CommonData.getInstance().getUserProfile().getAvatar())
@@ -47,52 +49,52 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
                 .placeholder(R.drawable.default_ava)
                 .into(avatar)
         ;
+        rcFriend = view.findViewById(R.id.rc_friend);
+        rcFriend.setLayoutManager(new LinearLayoutManager(getContext()));
+        adapter = new FriendAdapter(this);
+        getAllFriend();
+        rcFriend.setAdapter(adapter);
         return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rcFriend = view.findViewById(R.id.rc_friend);
-        rcFriend.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new FriendAdapter(this);
-        rcFriend.setAdapter(adapter);
-        getAllFriend();
         view.findViewById(R.id.avatar_main).setOnClickListener(this);
         view.findViewById(R.id.search_click).setOnClickListener(this);
     }
 
-    private void getAllFriend(){
+    private void getAllFriend() {
         userService = Common.getUserService();
         userService.getAllFriendOfUser(
                 CommonData.getInstance().getUserProfile().getId())
-                .enqueue(new Callback<List<FriendResponse>>() {
-            @Override
-            public void onResponse(Call<List<FriendResponse>> call, Response<List<FriendResponse>> response) {
-                friendResponses = response.body();
-                adapter.notifyDataSetChanged();
-            }
+                .enqueue(new Callback<BaseResponse<List<FriendResponse>>>() {
+                    @Override
+                    public void onResponse(Call<BaseResponse<List<FriendResponse>>> call, Response<BaseResponse<List<FriendResponse>>> response) {
+                        friendResponses = response.body().getData();
+                        adapter.notifyDataSetChanged();
+                    }
 
-            @Override
-            public void onFailure(Call<List<FriendResponse>> call, Throwable t) {
-                t.printStackTrace();
-            }
-        });
+                    @Override
+                    public void onFailure(Call<BaseResponse<List<FriendResponse>>> call, Throwable t) {
+                        t.printStackTrace();
+                    }
+                });
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.search_click:
                 break;
-                default:
-                    break;
+            default:
+                break;
         }
     }
 
     @Override
     public int getCount() {
-        if (friendResponses == null ){
+        if (friendResponses == null) {
             return 0;
         }
         return friendResponses.size();

@@ -15,9 +15,9 @@ import retrofit2.http.Query;
 
 public interface UserService {
 
-    @GET(value = "/getAllFriend")
-    Call<List<FriendResponse>> getAllFriendOfUser(
-            @Query("id") int id
+    @GET(value = "/users/getAllFriend")
+    Call<BaseResponse<List<FriendResponse>>> getAllFriendOfUser(
+            @Query("userId") int userId
     );
 
     @POST("/users/login")

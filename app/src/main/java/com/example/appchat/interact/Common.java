@@ -1,7 +1,5 @@
 package com.example.appchat.interact;
 
-import com.example.appchat.interact.Constant;
-import com.example.appchat.interact.UserService;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -16,7 +14,7 @@ public class Common {
                 .create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(Constant.URL_BASE)
+                .baseUrl(Constant.duphong)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 

@@ -27,6 +27,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="72dp">
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_avatar"
                 android:layout_width="64dp"
@@ -42,16 +43,18 @@
                 android:layout_marginLeft="16dp"
                 android:layout_gravity="center_vertical"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="linh"
                     android:textColor="@color/white"
                     android:id="@+id/tv_username"
                     android:layout_height="wrap_content" />
+
                 <TextView
-                    android:id="@+id/tv_name"
+                    android:id="@+id/last_mess"
                     android:layout_width="match_parent"
-                    android:text="Nguyen Linh"
+                    android:text=""
                     android:textSize="16sp"
                     android:textColor="@color/white"
                     android:layout_height="wrap_content" />

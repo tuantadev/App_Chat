@@ -17,6 +17,7 @@ import com.example.appchat.model.response.FriendResponse;
 public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFriend> {
 
     private IFriend iFriend;
+
     public FriendAdapter(IFriend iFriend){
         this.iFriend = iFriend;
     }
@@ -39,12 +40,10 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
         });
         Glide.with(holder.itemView.getContext())
                 .load(data.getFriendAvatar())
+                .placeholder(R.drawable.default_ava)
                 .into(holder.ivAvatar);
-        holder.tvUsername.setText(
-                data.getFriendUsername()
-        );
-        holder.tvName.setText(
-                data.getNickname()
+        holder.nickName.setText(
+                data.getFriendNameofchat()
         );
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,12 +66,12 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
 
     static class HolderFriend extends RecyclerView.ViewHolder {
         private ImageView ivAvatar;
-        private TextView tvName, tvUsername;
+        private TextView last_mess, nickName;
         public HolderFriend(@NonNull View itemView) {
             super(itemView);
             ivAvatar = itemView.findViewById(R.id.iv_avatar);
-            tvName = itemView.findViewById(R.id.tv_name);
-            tvUsername = itemView.findViewById(R.id.tv_username);
+            last_mess = itemView.findViewById(R.id.last_mess);
+            nickName = itemView.findViewById(R.id.tv_username);
         }
     }
 }
