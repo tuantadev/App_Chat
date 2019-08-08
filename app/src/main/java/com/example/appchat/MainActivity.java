@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-    public void openChat(){
+    public void openMainChat(){
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.content,new ChatMainFragment(),LoginFrag.class.getName())

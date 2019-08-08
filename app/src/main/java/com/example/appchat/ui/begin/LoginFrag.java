@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
-import com.example.appchat.Common;
+import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.MainActivity;
 import com.example.appchat.interact.UserService;
@@ -48,24 +48,6 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
         password_login = view.findViewById(R.id.password_login);
     }
 
-//    public boolean emailValidator(String email)
-//    {
-//        Pattern pattern;
-//        Matcher matcher;
-//        final String EMAIL_PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-//        pattern = Pattern.compile(EMAIL_PATTERN);
-//        matcher = pattern.matcher(email);
-//        return matcher.matches();
-//    }
-//    public boolean phonenumberValidator(String phone){
-//        Pattern pattern;
-//        Matcher matcher;
-//        final String MOBILE_PATTERN = "[0-9]{10}";
-//        pattern = Pattern.compile(MOBILE_PATTERN);
-//        matcher = pattern.matcher(phone);
-//        return matcher.matches();
-//    }
-
     @Override
     public void onClick(View view) {
         final LoginRequest loginRequest = new LoginRequest();
@@ -78,14 +60,14 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
                     public void onResponse(Call<BaseResponse<UserProfile>> call,
                                            Response<BaseResponse<UserProfile>> response) {
                         if (response.body().getStatus()!=1){
-                                Toast.makeText(getContext(),response.body().getMessage(),Toast.LENGTH_SHORT);
+                                Toast.makeText(getContext(),
+                                        response.body().getMessage(),Toast.LENGTH_SHORT);
                         }else {
                             loginSuccess(response.body().getData());
                         }
                     }
                     @Override
                     public void onFailure(Call<BaseResponse<UserProfile>> call, Throwable t) {
-
                     }
                 });
                 break;
@@ -119,10 +101,27 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
 //
 //        }
     }
-
     private void loginSuccess(UserProfile userProfile){
         CommonData.getInstance().setUserProfile(userProfile);
         SocketManager.getInstance().connect();
-        ((MainActivity)getActivity()).openChat();
+        ((MainActivity)getActivity()).openMainChat();
     }
+    //    public boolean emailValidator(String email)
+//    {
+//        Pattern pattern;
+//        Matcher matcher;
+//        final String EMAIL_PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+//        pattern = Pattern.compile(EMAIL_PATTERN);
+//        matcher = pattern.matcher(email);
+//        return matcher.matches();
+//    }
+//    public boolean phonenumberValidator(String phone){
+//        Pattern pattern;
+//        Matcher matcher;
+//        final String MOBILE_PATTERN = "[0-9]{10}";
+//        pattern = Pattern.compile(MOBILE_PATTERN);
+//        matcher = pattern.matcher(phone);
+//        return matcher.matches();
+//    }
+
 }

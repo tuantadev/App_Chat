@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.appchat.Common;
+import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.R;
 import com.example.appchat.model.response.FriendResponse;

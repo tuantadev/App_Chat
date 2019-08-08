@@ -7,7 +7,8 @@ public class UserProfile {
     private String username;
     private String password;
     private String avatar;
-    private Date createdTime;
+    private String name_of_chat;
+    private String createdTime;
 
     public int getId() {
         return id;
@@ -41,4 +42,19 @@ public class UserProfile {
         this.avatar = avatar;
     }
 
+    public String getName_of_chat() {
+        return name_of_chat;
+    }
+
+    public void setName_of_chat(String name_of_chat) {
+        this.name_of_chat = name_of_chat;
+    }
+
+    public String getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(String createdTime) {
+        this.createdTime = createdTime;
+    }
 }

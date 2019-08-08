@@ -23,17 +23,20 @@
         android:hint="username"
         android:gravity="center"
         android:textSize="24sp"
+        android:singleLine="true"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:layout_weight="0"
         android:id="@+id/password_login"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:background="@drawable/box_edittext"
         android:gravity="center"
         android:hint="password"
+        android:singleLine="true"
         android:textSize="24sp" />
 
     <LinearLayout

@@ -20,7 +20,7 @@ public interface UserService {
             @Query("id") int id
     );
 
-    @POST(value = "/login")
+    @POST("/users/login")
     Call<BaseResponse<UserProfile>> postInfoLogin(
             @Body LoginRequest loginRequest
     );
