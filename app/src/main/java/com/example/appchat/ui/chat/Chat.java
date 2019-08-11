@@ -1,5 +1,6 @@
 package com.example.appchat.ui.chat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -31,33 +32,46 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
     private EditText editText;
     private List<MessageChatResponse> messages;
     private FriendResponse friendResponse;
+    private Intent intent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.frag_chat_mess);
-        rc = findViewById(R.id.rc_friend);
-        messages = new ArrayList<>();
-        editText = findViewById(R.id.edit_text_chat);
-        rc.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new AdapterChat(this);
-        rc.setAdapter(adapter);
-        camera.setOnClickListener(this);
-        back.setOnClickListener(this);
-        callVideo.setOnClickListener(this);
-        send.setOnClickListener(this);
-        init();
+//        intent = getIntent();
 
-        SocketManager.getInstance().register(this);
+//        rc = findViewById(R.id.rc_friend);
+//        messages = new ArrayList<>();
+//        editText = findViewById(R.id.edit_text_chat);
+//        rc.setLayoutManager(new LinearLayoutManager(this));
+//        adapter = new AdapterChat(this);
+//        rc.setAdapter(adapter);
+//        camera.setOnClickListener(this);
+//        back.setOnClickListener(this);
+//        callVideo.setOnClickListener(this);
+//        send.setOnClickListener(this);
+//        init();
+//        SocketManager.getInstance().register(this);
     }
 
     private void init() {
+        Glide.with(this)
+                .load(CommonData.getInstance().getUserProfile().getAvatar())
+                .error(R.drawable.default_ava)
+                .placeholder(R.drawable.default_ava)
+                .into((ImageView)
+                        findViewById(R.id.click_setting_fri_chat));
+        ((TextView) findViewById(R.id.name_or_nickname)).setText(CommonData.getInstance()
+                        .getUserProfile()
+                        .getName_of_chat());
+
         if (friendResponse.getFriendAvatar()==null){
             Glide.with(this)
                     .load(friendResponse.getFriendAvatar())
                     .error(R.drawable.default_ava)
                     .placeholder(R.drawable.default_ava)
-                    .into((ImageView) findViewById(R.id.iv_avatar));
+                    .into((ImageView)
+                            findViewById(R.id.iv_avatar));
         }
         ((TextView) findViewById(R.id.name_or_nickname)).setText(friendResponse.getFriendNameofchat());
     }
@@ -73,7 +87,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
 
     @Override
     public MessageChatResponse getData(int pos) {
-        return null;
+        return messages.get(pos);
     }
 
     @Override
@@ -90,6 +104,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
     private void sendMess() {
         MessageChatResponse message = new MessageChatResponse();
         message.setReceiverId(friendResponse.getId());
+//        message.setReceiverId(intent.getIntExtra("id",0));
         message.setSenderId(
                 CommonData.getInstance().getUserProfile().getId()
         );

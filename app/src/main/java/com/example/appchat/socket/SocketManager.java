@@ -41,7 +41,7 @@ public class SocketManager {
 
     public void connect() {
         try {
-            socket = IO.socket(Constant.URL_SOCKET);
+            socket = IO.socket(Constant.socket_duphong);
             socket.on(io.socket.client.Socket.EVENT_CONNECT, new Emitter.Listener() {
                 @Override
                 public void call(Object... args) {
@@ -77,8 +77,8 @@ public class SocketManager {
         }
     }
 
-    private void receiveMessage(String s) {
-        MessageChatResponse messageChatResponse = new Gson().fromJson(s,MessageChatResponse.class);
+    private void receiveMessage(String content) {
+        MessageChatResponse messageChatResponse = new Gson().fromJson(content,MessageChatResponse.class);
         for(ReceiverMess receiverMess : receiverMesses){
             receiverMess.receieve(messageChatResponse);
         }

@@ -13,7 +13,6 @@ import com.bumptech.glide.Glide;
 import com.example.appchat.R;
 import com.example.appchat.model.response.FriendResponse;
 
-
 public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFriend> {
 
     private IFriend iFriend;
@@ -31,16 +30,11 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
 
     @Override
     public void onBindViewHolder(@NonNull final HolderFriend holder, int position) {
-        FriendResponse data = iFriend.getItem(position);
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        FriendResponse data = iFriend.getData(position);
         Glide.with(holder.itemView.getContext())
                 .load(data.getFriendAvatar())
                 .placeholder(R.drawable.default_ava)
+                .error(R.drawable.default_ava)
                 .into(holder.ivAvatar);
         holder.nickName.setText(
                 data.getFriendNameofchat()
@@ -48,7 +42,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                iFriend.onClickItem(holder.getAdapterPosition());
+                iFriend.onClick(holder.getAdapterPosition());
             }
         });
     }
@@ -60,17 +54,17 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
 
     public interface IFriend{
         int getCount();
-        FriendResponse getItem(int pos);
-        void onClickItem(int pos);
+        FriendResponse getData(int pos);
+        void onClick(int pos);
     }
 
     static class HolderFriend extends RecyclerView.ViewHolder {
         private ImageView ivAvatar;
-        private TextView last_mess, nickName;
+        private TextView nickName;
+
         public HolderFriend(@NonNull View itemView) {
             super(itemView);
             ivAvatar = itemView.findViewById(R.id.iv_avatar);
-            last_mess = itemView.findViewById(R.id.last_mess);
             nickName = itemView.findViewById(R.id.tv_username);
         }
     }

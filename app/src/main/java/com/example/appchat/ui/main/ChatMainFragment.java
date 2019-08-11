@@ -23,7 +23,6 @@ import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.interact.UserService;
 import com.example.appchat.ui.chat.Chat;
 
-import java.io.Serializable;
 import java.util.List;
 
 import retrofit2.Call;
@@ -43,6 +42,7 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag_main, container, false);
         avatar = view.findViewById(R.id.avatar_main);
+        getAllFriend();
         Glide.with(this)
                 .load(CommonData.getInstance().getUserProfile().getAvatar())
                 .centerCrop()
@@ -52,8 +52,8 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
         rcFriend = view.findViewById(R.id.rc_friend);
         rcFriend.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new FriendAdapter(this);
-        getAllFriend();
         rcFriend.setAdapter(adapter);
+
         return view;
     }
 
@@ -101,17 +101,21 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
     }
 
     @Override
-    public FriendResponse getItem(int pos) {
+    public FriendResponse getData(int pos) {
         return friendResponses.get(pos);
     }
 
     @Override
-    public void onClickItem(int pos) {
-        Intent intent = new Intent();
-        intent.setClass(getContext(), Chat.class);
-        intent.putExtra("FRIEND",
-                (Serializable) friendResponses.get(pos));
-        startActivity(intent);
+    public void onClick(int pos) {
+        openChat(pos);
     }
 
+    private void openChat(int pos){
+        Intent intent = new Intent();
+        intent.setClass(getContext(), Chat.class);
+//        intent.putExtra("name_chat", friendResponses.get(pos).getFriendNameofchat());
+//        intent.putExtra("avatar", friendResponses.get(pos).getFriendAvatar());
+//        intent.putExtra("id", friendResponses.get(pos).getFriendId());
+        startActivity(intent);
+    }
 }
