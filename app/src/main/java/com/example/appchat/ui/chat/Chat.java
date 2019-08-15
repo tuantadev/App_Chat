@@ -38,27 +38,27 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.frag_chat_mess);
-//        intent = getIntent();
+        intent = getIntent();
 
-//        rc = findViewById(R.id.rc_friend);
-//        messages = new ArrayList<>();
-//        editText = findViewById(R.id.edit_text_chat);
-//        rc.setLayoutManager(new LinearLayoutManager(this));
-//        adapter = new AdapterChat(this);
-//        rc.setAdapter(adapter);
-//        camera.setOnClickListener(this);
-//        back.setOnClickListener(this);
-//        callVideo.setOnClickListener(this);
-//        send.setOnClickListener(this);
-//        init();
-//        SocketManager.getInstance().register(this);
+        rc = findViewById(R.id.rc_friend);
+        messages = new ArrayList<>();
+        editText = findViewById(R.id.edit_text_chat);
+        rc.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new AdapterChat(this);
+        rc.setAdapter(adapter);
+        camera.setOnClickListener(this);
+        back.setOnClickListener(this);
+        callVideo.setOnClickListener(this);
+        send.setOnClickListener(this);
+        init();
+        SocketManager.getInstance().register(this);
     }
 
     private void init() {
         Glide.with(this)
                 .load(CommonData.getInstance().getUserProfile().getAvatar())
-                .error(R.drawable.default_ava)
-                .placeholder(R.drawable.default_ava)
+//                .error(R.drawable.default_ava)
+//                .placeholder(R.drawable.default_ava)
                 .into((ImageView)
                         findViewById(R.id.click_setting_fri_chat));
         ((TextView) findViewById(R.id.name_or_nickname)).setText(CommonData.getInstance()
@@ -68,8 +68,8 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
         if (friendResponse.getFriendAvatar()==null){
             Glide.with(this)
                     .load(friendResponse.getFriendAvatar())
-                    .error(R.drawable.default_ava)
-                    .placeholder(R.drawable.default_ava)
+//                    .error(R.drawable.default_ava)
+//                    .placeholder(R.drawable.default_ava)
                     .into((ImageView)
                             findViewById(R.id.iv_avatar));
         }

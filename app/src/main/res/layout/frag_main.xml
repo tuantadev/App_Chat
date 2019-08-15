@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_width="56dp"
-            android:src="@drawable/avatar"
+            android:src="@drawable/default_ava"
             android:scaleType="centerCrop"
             android:layout_height="56dp" />
 

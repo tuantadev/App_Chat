@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.bumptech.glide.Glide;
+import com.example.appchat.Test;
 import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.R;
@@ -46,7 +47,7 @@ public class ChatMainFragment extends Fragment implements FriendAdapter.IFriend,
         Glide.with(this)
                 .load(CommonData.getInstance().getUserProfile().getAvatar())
                 .centerCrop()
-                .placeholder(R.drawable.default_ava)
+//                .placeholder(R.drawable.default_ava)
                 .into(avatar)
         ;
         rcFriend = view.findViewById(R.id.rc_friend);

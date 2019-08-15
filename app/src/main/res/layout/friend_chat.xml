@@ -10,7 +10,7 @@
         android:id="@+id/avatar_chat"
         android:layout_width="32dp"
         android:layout_gravity="center"
-        android:src="@drawable/avatar"
+        android:src="@drawable/default_ava"
         android:layout_height="32dp" />
 
     <TextView

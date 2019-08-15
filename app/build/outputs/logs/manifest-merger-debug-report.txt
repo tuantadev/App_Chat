@@ -1,0 +1,353 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [androidx.databinding:databinding-adapters:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8762995fe7227687fdfca8638b0c2d58/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/0f99fe653448661532631942033b60bd/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.ernestoyaquello.dragdropswiperecyclerview:drag-drop-swipe-recyclerview:0.4.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/291a7fadc71fcc8b0b2f9e958cd86743/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/2038bd8051f83454bfbffb2609c6ad1a/AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/473351b01dc455ca63300ac4c7d5c079/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/7973f427cc8ed548a4b6916048309df5/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.zcweng:switch-button:0.0.3] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d9b0401e9bb4405b14f13aa67ab8a720/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-rc02] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/773d2bcf8f9ec81b4af0567d1cced21d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:17:1-37:12
+MERGED from [com.daimajia.swipelayout:library:1.2.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6f08f70f604509f3376f30c551644d78/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae506b2d52195866ffba185215bf33b3/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/60a770545e56c179a52bc52b3eba177a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f06e62d8cbdb492f3ef67075dc75a90a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/cf0bc486d5d79bdad8d9634f2e50f861/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/3803b4391e20f82491b83e98a14afe84/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/a63ded015e9cdc23e70fa38eeaaebd77/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5259bcaef8a64952617c984d61e3104f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae54bc97d5d2c1245d044363ddfc1b0f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/dd5b4d30de38e17416ac1411d824a57e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d727074f95877ec8e879da853348a625/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/4bdb00b05876b6671a66f0c5e425e310/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0-rc02] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/132c69ead104ddac45b4f1d42e369535/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/abd3e035a7fa0d0db808ccd9f227f6c3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/92fe665f1a6b993fba2c7ca1cb69d5fc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8b347b29fc8e50e93e13cd0ccc1eb7f4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d18e1c7e9c8fcd05bee8df3298ad8aef/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/2241abda5b9907f0f1d3b9b6c5e4ed6e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d9a8861ca55c0f5776fe8706dc18b639/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e09810eabc21714bb143bc633026f896/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/3e24f81888f1eeb4ade5304d154b4f7c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b286a4ef77ca6c6094b4b061859d8754/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/43c815d7bf590cba549b547c19903090/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/90b173c47fbb47ebf04df9f3657c2150/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/56dfddb6fd38da53f41810a38f9c3f56/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1e3a844d8d81b5a12cc1d4f5b7754dc0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1d1ea86b92b833a3bd9e182f11c4825a/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e2dade4f9e1adc55aadcd5b90c2ae767/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d994d1e06a6b07d3beb416f2addb9ba4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/170b0317fa4953a6184937b913057867/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e31a21a9e8be1aa15203632ef9d653e8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/da26257bb8ca3ee329948e5b44632dd8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/156db5832dc5c4e3cb8e253d94765c8d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f0cf1bd42dc9b33a1233062936fafd22/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/be1a29b906ae03fdfe9c1b7adc32a4e8/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:3:5-34
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:5:5-66
+MERGED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:8:22-78
+application
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:10:5-28:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/AndroidManifest.xml:22:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/473351b01dc455ca63300ac4c7d5c079/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/473351b01dc455ca63300ac4c7d5c079/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/7973f427cc8ed548a4b6916048309df5/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/7973f427cc8ed548a4b6916048309df5/AndroidManifest.xml:10:5-20
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae506b2d52195866ffba185215bf33b3/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae506b2d52195866ffba185215bf33b3/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/60a770545e56c179a52bc52b3eba177a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/60a770545e56c179a52bc52b3eba177a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f06e62d8cbdb492f3ef67075dc75a90a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f06e62d8cbdb492f3ef67075dc75a90a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/cf0bc486d5d79bdad8d9634f2e50f861/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/cf0bc486d5d79bdad8d9634f2e50f861/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b286a4ef77ca6c6094b4b061859d8754/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b286a4ef77ca6c6094b4b061859d8754/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/90b173c47fbb47ebf04df9f3657c2150/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/90b173c47fbb47ebf04df9f3657c2150/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1d1ea86b92b833a3bd9e182f11c4825a/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1d1ea86b92b833a3bd9e182f11c4825a/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b286a4ef77ca6c6094b4b061859d8754/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:17:9-40
+	android:networkSecurityConfig
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:16:9-69
+activity#com.example.appchat.MainActivity
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:19:9-25:20
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:19:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:23:27-74
+activity#com.example.appchat.ui.chat.Chat
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:26:9-49
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:26:19-47
+activity#com.example.appchat.Test
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:27:9-41
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:27:19-39
+uses-sdk
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8762995fe7227687fdfca8638b0c2d58/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8762995fe7227687fdfca8638b0c2d58/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/0f99fe653448661532631942033b60bd/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/0f99fe653448661532631942033b60bd/AndroidManifest.xml:22:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/AndroidManifest.xml:20:5-44
+MERGED from [com.ernestoyaquello.dragdropswiperecyclerview:drag-drop-swipe-recyclerview:0.4.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/291a7fadc71fcc8b0b2f9e958cd86743/AndroidManifest.xml:7:5-9:41
+MERGED from [com.ernestoyaquello.dragdropswiperecyclerview:drag-drop-swipe-recyclerview:0.4.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/291a7fadc71fcc8b0b2f9e958cd86743/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/2038bd8051f83454bfbffb2609c6ad1a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/2038bd8051f83454bfbffb2609c6ad1a/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/473351b01dc455ca63300ac4c7d5c079/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/473351b01dc455ca63300ac4c7d5c079/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/7973f427cc8ed548a4b6916048309df5/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/7973f427cc8ed548a4b6916048309df5/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.zcweng:switch-button:0.0.3] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d9b0401e9bb4405b14f13aa67ab8a720/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.zcweng:switch-button:0.0.3] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d9b0401e9bb4405b14f13aa67ab8a720/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-rc02] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/773d2bcf8f9ec81b4af0567d1cced21d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-rc02] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/773d2bcf8f9ec81b4af0567d1cced21d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:20:5-44
+MERGED from [com.daimajia.swipelayout:library:1.2.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6f08f70f604509f3376f30c551644d78/AndroidManifest.xml:6:5-8:41
+MERGED from [com.daimajia.swipelayout:library:1.2.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6f08f70f604509f3376f30c551644d78/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae506b2d52195866ffba185215bf33b3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae506b2d52195866ffba185215bf33b3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/60a770545e56c179a52bc52b3eba177a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/60a770545e56c179a52bc52b3eba177a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f06e62d8cbdb492f3ef67075dc75a90a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f06e62d8cbdb492f3ef67075dc75a90a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/cf0bc486d5d79bdad8d9634f2e50f861/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/cf0bc486d5d79bdad8d9634f2e50f861/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/3803b4391e20f82491b83e98a14afe84/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/3803b4391e20f82491b83e98a14afe84/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/a63ded015e9cdc23e70fa38eeaaebd77/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/a63ded015e9cdc23e70fa38eeaaebd77/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5259bcaef8a64952617c984d61e3104f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5259bcaef8a64952617c984d61e3104f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae54bc97d5d2c1245d044363ddfc1b0f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/ae54bc97d5d2c1245d044363ddfc1b0f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/dd5b4d30de38e17416ac1411d824a57e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/dd5b4d30de38e17416ac1411d824a57e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d727074f95877ec8e879da853348a625/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d727074f95877ec8e879da853348a625/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/4bdb00b05876b6671a66f0c5e425e310/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/4bdb00b05876b6671a66f0c5e425e310/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-rc02] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/132c69ead104ddac45b4f1d42e369535/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-rc02] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/132c69ead104ddac45b4f1d42e369535/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/abd3e035a7fa0d0db808ccd9f227f6c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/abd3e035a7fa0d0db808ccd9f227f6c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/92fe665f1a6b993fba2c7ca1cb69d5fc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/92fe665f1a6b993fba2c7ca1cb69d5fc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8b347b29fc8e50e93e13cd0ccc1eb7f4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8b347b29fc8e50e93e13cd0ccc1eb7f4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d18e1c7e9c8fcd05bee8df3298ad8aef/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d18e1c7e9c8fcd05bee8df3298ad8aef/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/2241abda5b9907f0f1d3b9b6c5e4ed6e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/2241abda5b9907f0f1d3b9b6c5e4ed6e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d9a8861ca55c0f5776fe8706dc18b639/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d9a8861ca55c0f5776fe8706dc18b639/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e09810eabc21714bb143bc633026f896/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e09810eabc21714bb143bc633026f896/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/3e24f81888f1eeb4ade5304d154b4f7c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/3e24f81888f1eeb4ade5304d154b4f7c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b286a4ef77ca6c6094b4b061859d8754/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b286a4ef77ca6c6094b4b061859d8754/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/43c815d7bf590cba549b547c19903090/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/43c815d7bf590cba549b547c19903090/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/90b173c47fbb47ebf04df9f3657c2150/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/90b173c47fbb47ebf04df9f3657c2150/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/56dfddb6fd38da53f41810a38f9c3f56/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/56dfddb6fd38da53f41810a38f9c3f56/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1e3a844d8d81b5a12cc1d4f5b7754dc0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1e3a844d8d81b5a12cc1d4f5b7754dc0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1d1ea86b92b833a3bd9e182f11c4825a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/1d1ea86b92b833a3bd9e182f11c4825a/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e2dade4f9e1adc55aadcd5b90c2ae767/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e2dade4f9e1adc55aadcd5b90c2ae767/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d994d1e06a6b07d3beb416f2addb9ba4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/d994d1e06a6b07d3beb416f2addb9ba4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/170b0317fa4953a6184937b913057867/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/170b0317fa4953a6184937b913057867/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e31a21a9e8be1aa15203632ef9d653e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e31a21a9e8be1aa15203632ef9d653e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/da26257bb8ca3ee329948e5b44632dd8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/da26257bb8ca3ee329948e5b44632dd8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/156db5832dc5c4e3cb8e253d94765c8d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/156db5832dc5c4e3cb8e253d94765c8d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f0cf1bd42dc9b33a1233062936fafd22/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f0cf1bd42dc9b33a1233062936fafd22/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/be1a29b906ae03fdfe9c1b7adc32a4e8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/be1a29b906ae03fdfe9c1b7adc32a4e8/AndroidManifest.xml:20:5-44
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:29:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:31:13-33:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:31:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:32:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/AndroidManifest.xml:32:25-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:22:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:26:22-79
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:30:13-84
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/6794f4f44f20714d426b1ac96f1cb90e/AndroidManifest.xml:42:25-78
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:18.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9bb1370ba00e8d7aa0b633034ee9f1d6/AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/AndroidManifest.xml:24:13-58

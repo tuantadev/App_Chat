@@ -23,7 +23,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_width="46dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/avatar"
+                android:src="@drawable/default_ava"
                 android:layout_height="46dp" />
 
             <LinearLayout

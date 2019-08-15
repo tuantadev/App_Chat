@@ -32,7 +32,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="128dp"
                 android:layout_gravity="center"
-                android:src="@drawable/avatar"
+                android:src="@drawable/default_ava"
                 android:layout_height="128dp" />
 
             <TextView

@@ -33,8 +33,8 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
         FriendResponse data = iFriend.getData(position);
         Glide.with(holder.itemView.getContext())
                 .load(data.getFriendAvatar())
-                .placeholder(R.drawable.default_ava)
-                .error(R.drawable.default_ava)
+//                .placeholder(R.drawable.default_ava)
+////                .error(R.drawable.default_ava)
                 .into(holder.ivAvatar);
         holder.nickName.setText(
                 data.getFriendNameofchat()

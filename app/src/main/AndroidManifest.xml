@@ -24,6 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.chat.Chat"/>
+        <activity android:name=".Test"/>
     </application>
 
 </manifest>
