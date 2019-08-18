@@ -1,28 +1,14 @@
 package com.example.appchat.model.response;
 
-public class FriendResponse {
+import java.io.Serializable;
+
+public class FriendResponse implements Serializable {
 
     private int id;
     private int friendId;
     private String friendNameofchat;
     private String friendUsername;
     private String friendAvatar;
-
-    public int getFriendId() {
-        return friendId;
-    }
-
-    public void setFriendId(int friendId) {
-        this.friendId = friendId;
-    }
-
-    public String getFriendNameofchat() {
-        return friendNameofchat;
-    }
-
-    public void setFriendNameofchat(String friendNameofchat) {
-        this.friendNameofchat = friendNameofchat;
-    }
 
     public String getFriendUsername() {
         return friendUsername;
@@ -38,6 +24,22 @@ public class FriendResponse {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getFriendId() {
+        return friendId;
+    }
+
+    public void setFriendId(int friendId) {
+        this.friendId = friendId;
+    }
+
+    public String getFriendNameofchat() {
+        return friendNameofchat;
+    }
+
+    public void setFriendNameofchat(String friendNameofchat) {
+        this.friendNameofchat = friendNameofchat;
     }
 
     public String getFriendAvatar() {

@@ -22,4 +22,8 @@ public class Common {
                 retrofit.create(UserService.class);
         return userService;
     }
+
+    public static String getLinkImage(String path){
+        return Constant.duphong+"/getImage?fileName="+path;
+    }
 }

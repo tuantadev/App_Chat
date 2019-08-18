@@ -1259,6 +1259,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_bac
 id btn_capture
 id btn_login
 id btn_register
@@ -1342,6 +1343,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id iv_avatar
+id iv_img
 id jumpToEnd
 id jumpToStart
 id keep_sign_in
@@ -1395,10 +1397,10 @@ id progress_horizontal
 id pull_out
 id radio
 id rc_friend
+id rc_images
 id rc_photo
 id rc_photo_in_setting_friend_chat
 id re_password_register
-id rec_story
 id rectangles
 id register
 id reverseSawtooth
@@ -1463,6 +1465,7 @@ id story
 id stretch
 id submenuarrow
 id submit_area
+id tab
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1509,6 +1512,7 @@ id username_register
 id username_setting
 id view_offset_helper
 id visible
+id vp
 id wide
 id withText
 id wrap
@@ -1562,6 +1566,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout actitivity_camrera
+layout activity_image_gallery
 layout activity_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1581,6 +1586,7 @@ layout frag_chat_mess
 layout frag_collapse
 layout frag_collapse_meta_end
 layout frag_friend_chat
+layout frag_friends
 layout frag_login
 layout frag_main
 layout frag_manager_user_profile
@@ -1588,6 +1594,9 @@ layout frag_photo_image_in_chat
 layout frag_register
 layout frag_setting_friend_chat
 layout friend_chat
+layout item_receive_image
+layout item_send_image
+layout item_squareimageview
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

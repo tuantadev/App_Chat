@@ -7,7 +7,7 @@
 
     <uses-sdk
         android:minSdkVersion="22"
-        android:targetSdkVersion="29" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.appchat.ui.chat.Chat" />
-        <activity android:name="com.example.appchat.Test" />
+        <activity android:name="com.example.appchat.ui.gallery.ImageGalleryAcrivity" />
         <!--
              FirebaseMessagingService performs security checks at runtime,
              but set to not exported to explicitly avoid allowing another app to call it.

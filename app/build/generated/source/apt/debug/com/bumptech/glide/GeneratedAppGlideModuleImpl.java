@@ -3,7 +3,7 @@ package com.bumptech.glide;
 import android.content.Context;
 import android.util.Log;
 import androidx.annotation.NonNull;
-import com.example.appchat.MyAppGlideModule;
+import com.example.appchat.MyGlide;
 import java.lang.Class;
 import java.lang.Override;
 import java.lang.SuppressWarnings;
@@ -12,12 +12,12 @@ import java.util.Set;
 
 @SuppressWarnings("deprecation")
 final class GeneratedAppGlideModuleImpl extends GeneratedAppGlideModule {
-  private final MyAppGlideModule appGlideModule;
+  private final MyGlide appGlideModule;
 
   GeneratedAppGlideModuleImpl() {
-    appGlideModule = new MyAppGlideModule();
+    appGlideModule = new MyGlide();
     if (Log.isLoggable("Glide", Log.DEBUG)) {
-      Log.d("Glide", "Discovered AppGlideModule from annotation: com.example.appchat.MyAppGlideModule");
+      Log.d("Glide", "Discovered AppGlideModule from annotation: com.example.appchat.MyGlide");
     }
   }
 

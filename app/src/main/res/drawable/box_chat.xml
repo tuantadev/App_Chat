@@ -3,7 +3,5 @@
     android:shape="rectangle">
 
     <solid android:color="#607D8B"/>
-    <size android:height="?actionModeBackground"
-        android:width="?actionModeBackground"/>
     <corners android:radius="12dp"/>
 </shape>

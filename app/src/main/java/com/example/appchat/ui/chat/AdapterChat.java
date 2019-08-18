@@ -9,54 +9,102 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.appchat.GlideApp;
+import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.R;
 import com.example.appchat.model.response.MessageChatResponse;
 
 public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-
+    private static final int SEND_TEXT = 0;
+    private static final int RECEIVE_TEXT = 1;
+    private static final int SEND_IMG = 2;
+    private static final int RECEIVE_IMG = 3;
     private IChat inter;
-    public AdapterChat(IChat inter){
+
+    public AdapterChat(IChat inter) {
         this.inter = inter;
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (inter.getData(position).getSenderId()== CommonData.getInstance().getUserProfile().getId()) return 1;
-        else return 0;
+        String type = inter.getData(position).getType();
+        if (inter.getData(position).getSenderId()
+                == CommonData.getInstance().getUserProfile().getId()) {
+            if (type == null || type.equals(MessageChatResponse.TYPE_TEXT)) {
+                return SEND_TEXT;
+            }
+            return SEND_IMG;
+        }
+        if (type == null || type.equals(MessageChatResponse.TYPE_TEXT)) {
+            return RECEIVE_TEXT;
+        }
+        return RECEIVE_IMG;
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        if (viewType == 1)
-            return new SendViewHolder(
-                LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.user_chat,parent,false));
-        return
-                new ReceiveViewHolder(
-                LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.friend_chat,parent,false));
+        switch (viewType) {
+            case SEND_TEXT:
+                return new SendViewHolder(
+                        LayoutInflater.from(parent.getContext())
+                                .inflate(R.layout.user_chat, parent, false));
+            case SEND_IMG:
+                return new SendImageViewHolder(
+                        LayoutInflater.from(parent.getContext())
+                                .inflate(R.layout.item_send_image, parent, false));
+            case RECEIVE_TEXT:
+                return new ReceiveViewHolder(
+                        LayoutInflater.from(parent.getContext())
+                                .inflate(R.layout.friend_chat, parent, false));
+            default:
+                return new ReceiveImageViewHolder(
+                        LayoutInflater.from(parent.getContext())
+                                .inflate(R.layout.item_receive_image, parent, false));
+        }
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int position) {
         MessageChatResponse messageChatResponse = inter.getData(position);
 
-        if (getItemViewType(position) == 1){
-            SendViewHolder holder = (SendViewHolder) viewHolder;
-            holder.tv.setText(messageChatResponse.getContent());
-        }
-        else {
-            ReceiveViewHolder holder = (ReceiveViewHolder) viewHolder;
-            holder.tv.setText(messageChatResponse.getContent());
+        switch (getItemViewType(position)) {
+            case SEND_TEXT:
+                SendViewHolder holder = (SendViewHolder) viewHolder;
+                holder.tv.setText(messageChatResponse.getContent());
+                break;
+            case RECEIVE_TEXT:
+                ReceiveViewHolder holderText = (ReceiveViewHolder) viewHolder;
+                holderText.tv.setText(messageChatResponse.getContent());
+                break;
+            case SEND_IMG:
+                SendImageViewHolder sendImage = (SendImageViewHolder) viewHolder;
+                GlideApp.with(sendImage.im)
+                        .load(Common.getLinkImage(messageChatResponse.getContent()))
+                        .error(R.drawable.default_ava)
+                        .placeholder(R.drawable.default_ava)
+                        .into(sendImage.im);
+                break;
+            case RECEIVE_IMG:
+                ReceiveImageViewHolder reImage = (ReceiveImageViewHolder) viewHolder;
+                GlideApp.with(reImage.im)
+                        .load(Common.getLinkImage(messageChatResponse.getContent()))
+                        .error(R.drawable.default_ava)
+                        .placeholder(R.drawable.default_ava)
+                        .into(reImage.im);
+                break;
+            default:
+                break;
         }
     }
 
-    public interface IChat{
+    public interface IChat {
         int getCount();
+
         MessageChatResponse getData(int pos);
     }
+
     @Override
     public int getItemCount() {
         return inter.getCount();
@@ -65,6 +113,7 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     static class SendViewHolder extends RecyclerView.ViewHolder {
         private ImageView im;
         private TextView tv;
+
         public SendViewHolder(@NonNull View itemView) {
             super(itemView);
             im = itemView.findViewById(R.id.avatar_chat);
@@ -75,10 +124,30 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     static class ReceiveViewHolder extends RecyclerView.ViewHolder {
         private ImageView im;
         private TextView tv;
+
         public ReceiveViewHolder(@NonNull View itemView) {
             super(itemView);
             im = itemView.findViewById(R.id.avatar_chat);
             tv = itemView.findViewById(R.id.tv_chat);
+        }
+    }
+
+    static class SendImageViewHolder extends RecyclerView.ViewHolder {
+        private ImageView im;
+
+        public SendImageViewHolder(@NonNull View itemView) {
+            super(itemView);
+            im = itemView.findViewById(R.id.iv_img);
+        }
+    }
+
+    static class ReceiveImageViewHolder extends RecyclerView.ViewHolder {
+        private ImageView im, avatar;
+
+        public ReceiveImageViewHolder(@NonNull View itemView) {
+            super(itemView);
+            im = itemView.findViewById(R.id.iv_img);
+            avatar = itemView.findViewById(R.id.iv_avatar);
         }
     }
 }

@@ -53,76 +53,29 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
         final LoginRequest loginRequest = new LoginRequest();
         loginRequest.setUsername(username_login.getText().toString());
         loginRequest.setPassword(password_login.getText().toString());
-        switch (view.getId()){
-            case R.id.btn_login:
-                userService.postInfoLogin(loginRequest).enqueue(new Callback<BaseResponse<UserProfile>>() {
-                    @Override
-                    public void onResponse(Call<BaseResponse<UserProfile>> call,
-                                           Response<BaseResponse<UserProfile>> response) {
-                        if (response.body().getStatus()!=1){
-                                Toast.makeText(getContext(),
-                                        response.body().getMessage(),Toast.LENGTH_SHORT);
-                        }else {
-                            loginSuccess(response.body().getData());
-                        }
-                    }
-                    @Override
-                    public void onFailure(Call<BaseResponse<UserProfile>> call, Throwable t) {
-                        System.out.println("connect is fail");
-                    }
-                });
-                break;
-                default:
-                    break;
-        }
-//        switch (view.getId()){
-//////            case R.id.login_frag_login:
-//////                if (username_login.getText().toString().trim() == null
-//////                        || password_login.getText().toString().trim() == null
-//////                        || !emailValidator(username_login.getText().toString())
-//////                        ||!phonenumberValidator(username_login.getText().toString())){
-//////                    Toast.makeText(getContext(),"username or password invalid"
-//////                            ,Toast.LENGTH_LONG)
-//////                            .show();
-//////                }else {
-//////                    Toast.makeText(getContext(),"login success"
-//////                            ,Toast.LENGTH_LONG).show();
-//////                    getFragmentManager().beginTransaction().replace(R.id.login_frag_login
-//////                            ,new ChatMainFragment()
-//////                            ,ChatMainFragment.class.getName())
-//////                            .commit();
-//////                }
-//////                break;
-//////            case R.id.register_of_frag_login:
-//////                break;
-//////            case R.id.keep_sign_in:
-//////                break;
-//////            case R.id.forget:
-//////                break;
-////
-////        }
+        userService.postInfoLogin(loginRequest).enqueue(new Callback<BaseResponse<UserProfile>>() {
+            @Override
+            public void onResponse(Call<BaseResponse<UserProfile>> call,
+                                   Response<BaseResponse<UserProfile>> response) {
+                if (response.body().getStatus() != 1) {
+                    Toast.makeText(getContext(),
+                            response.body().getMessage(), Toast.LENGTH_SHORT);
+                } else {
+                    loginSuccess(response.body().getData());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<BaseResponse<UserProfile>> call, Throwable t) {
+                System.out.println("connect is fail");
+            }
+        });
     }
     private void loginSuccess(UserProfile userProfile){
         CommonData.getInstance().setUserProfile(userProfile);
-//        SocketManager.getInstance().connect();
+        SocketManager.getInstance().connect();
         ((MainActivity)getActivity()).openMainChat();
+//        getActivity().finish();
     }
-    //    public boolean emailValidator(String email)
-//    {
-//        Pattern pattern;
-//        Matcher matcher;
-//        final String EMAIL_PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-//        pattern = Pattern.compile(EMAIL_PATTERN);
-//        matcher = pattern.matcher(email);
-//        return matcher.matches();
-//    }
-//    public boolean phonenumberValidator(String phone){
-//        Pattern pattern;
-//        Matcher matcher;
-//        final String MOBILE_PATTERN = "[0-9]{10}";
-//        pattern = Pattern.compile(MOBILE_PATTERN);
-//        matcher = pattern.matcher(phone);
-//        return matcher.matches();
-//    }
 
 }

@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_alignParentBottom="true"
                 android:background="@color/topic"
-                android:layout_height="wrap_content">
+                android:layout_height="54dp">
 
                 <FrameLayout
                     android:id="@+id/change_frag_collapse"
@@ -100,22 +100,18 @@
                     android:orientation="horizontal">
 
                 </FrameLayout>
-
-
                 <EditText
                     android:id="@+id/edit_text_chat"
                     android:layout_weight="10"
                     android:background="@drawable/box_insert_chat"
-                    android:layout_gravity="center_vertical"
-                    android:hint="Aa"
+                    android:layout_gravity="center"
+                    android:hint="Typing your text ...."
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     android:textSize="18sp"
                     android:gravity="center_vertical"
-                    android:paddingLeft="8dp"
+                    android:paddingLeft="16dp"
                     android:maxHeight="128dp"
-                    android:paddingBottom="20dp"
-                    android:paddingTop="16dp"
                     android:layout_height="wrap_content"
                     android:layout_width="0dp" />
 
