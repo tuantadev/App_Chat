@@ -36,7 +36,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.appchat.ui.chat.Chat" />
-        <activity android:name="com.example.appchat.ui.gallery.ImageGalleryAcrivity" />
+        <activity android:name="com.example.appchat.ui.gallery.ImageGalleryActivity" />
+        <activity android:name="com.example.appchat.ui.chat.ShowImageFrag" />
         <!--
              FirebaseMessagingService performs security checks at runtime,
              but set to not exported to explicitly avoid allowing another app to call it.

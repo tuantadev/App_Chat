@@ -30,7 +30,6 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
 
     @Override
     public void onBindViewHolder(@NonNull final HolderFriend holderFriend, int i) {
-        System.out.println("setUp");
         FriendResponse data = inter.getItem(i);
 
         Glide.with(holderFriend.ivAvatar)

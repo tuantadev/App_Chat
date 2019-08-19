@@ -1259,7 +1259,8 @@ id beginning
 id blocking
 id bottom
 id bounce
-id btn_bac
+id btn_back
+id btn_back_chat
 id btn_capture
 id btn_login
 id btn_register
@@ -1439,6 +1440,7 @@ id showCustom
 id showHome
 id showTitle
 id show_chat
+id show_img_mess
 id sin
 id smallLabel
 id snackbar_action
@@ -1619,6 +1621,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout send_message
+layout show_image_onmess
 layout support_simple_spinner_dropdown_item
 layout test
 layout user_chat

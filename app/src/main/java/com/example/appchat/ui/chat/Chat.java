@@ -1,7 +1,6 @@
 package com.example.appchat.ui.chat;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -23,7 +22,7 @@ import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.model.response.MessageChatResponse;
 import com.example.appchat.socket.ReceiverMess;
 import com.example.appchat.socket.SocketManager;
-import com.example.appchat.ui.gallery.ImageGalleryAcrivity;
+import com.example.appchat.ui.gallery.ImageGalleryActivity;
 import com.google.gson.Gson;
 
 import java.io.File;
@@ -40,7 +39,6 @@ import retrofit2.Response;
 public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.OnClickListener, ReceiverMess {
 
     private RecyclerView rc;
-    private ImageView camera, callVideo, back, send;
     private AdapterChat adapter;
     private EditText editText;
     private List<MessageChatResponse> messages;
@@ -62,9 +60,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
                 (FriendResponse) getIntent()
                         .getSerializableExtra(
                                 "FRIEND");
-//        camera.setOnClickListener(this);
         findViewById(R.id.back_main).setOnClickListener(this);
-//        callVideo.setOnClickListener(this);
         findViewById(R.id.send_mess).setOnClickListener(this);
         init();
         SocketManager.getInstance().register(this);
@@ -116,6 +112,15 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
         return messages.size();
     }
 
+    @Override
+    public void itemCLick(int pos) {
+        Intent intent = new Intent();
+        intent.putExtra("PATH",messages.get(pos).getContent());
+        System.out.println(messages.get(pos).getContent());
+        intent.setClass(this,ShowImageFrag.class);
+        startActivity(intent);
+    }
+
 
     @Override
     public MessageChatResponse getData(int pos) {
@@ -133,7 +138,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
                 break;
             case R.id.take_photo_in_mess:
                 Intent intent = new Intent();
-                intent.setClass(this, ImageGalleryAcrivity.class);
+                intent.setClass(this, ImageGalleryActivity.class);
                 startActivityForResult(intent, 100);
                 break;
             default:
@@ -193,7 +198,6 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
     private void sendMess() {
         MessageChatResponse message = new MessageChatResponse();
         message.setReceiverId(friendResponse.getFriendId());
-//        message.setReceiverId(intent.getIntExtra("id",0));
         message.setSenderId(
                 CommonData.getInstance().getUserProfile().getId()
         );

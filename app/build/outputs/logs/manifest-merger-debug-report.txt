@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
 MERGED from [androidx.databinding:databinding-adapters:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8762995fe7227687fdfca8638b0c2d58/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.4.2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/0f99fe653448661532631942033b60bd/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:2:1-11:12
@@ -54,20 +54,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/156db5832dc5c4e3cb8e253d94765c8d/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f0cf1bd42dc9b33a1233062936fafd22/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/be1a29b906ae03fdfe9c1b7adc32a4e8/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
 		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:1-31:12
 		INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:2:11-69
@@ -90,7 +90,7 @@ ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifes
 	android:name
 		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:10:5-28:19
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:10:5-29:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/fecf7b81ef160cd2f72d2096e3281390/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/AndroidManifest.xml:22:5-20
@@ -157,10 +157,14 @@ activity#com.example.appchat.ui.chat.Chat
 ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:26:9-49
 	android:name
 		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:26:19-47
-activity#com.example.appchat.ui.gallery.ImageGalleryAcrivity
+activity#com.example.appchat.ui.gallery.ImageGalleryActivity
 ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:27:9-68
 	android:name
 		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:27:19-66
+activity#com.example.appchat.ui.chat.ShowImageFrag
+ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:28:9-58
+	android:name
+		ADDED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml:28:19-56
 uses-sdk
 INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/kislupin/Downloads/App_Chat-master/app/src/main/AndroidManifest.xml

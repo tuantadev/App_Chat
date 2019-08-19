@@ -1,4 +1,4 @@
-#Sun Aug 18 15:50:07 ICT 2019
+#Tue Aug 20 00:19:59 ICT 2019
 base.0=/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/transforms/dexMerger/debug/10
 path.0=classes.dex
 renamed.0=classes.dex

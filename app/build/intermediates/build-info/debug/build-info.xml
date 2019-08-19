@@ -1,95 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="28"
-    build-mode="FULL"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="29"
+    build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.4.2"
-    timestamp="1566126591826"
+    timestamp="1566236899298"
     token="-5948464911622166231"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1573" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="300" />
+        duration="18" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
     <artifact
         location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1566126591826"
-        verifier="FULL_BUILD_REQUESTED" >
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1566235194650"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
@@ -104,8 +49,38 @@
             location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1566236899298"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

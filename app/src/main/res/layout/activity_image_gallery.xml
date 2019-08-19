@@ -10,7 +10,7 @@
         android:layout_height="?actionBarSize">
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/btn_bac"
+            android:id="@+id/btn_back"
             android:layout_width="?actionBarSize"
             android:layout_height="?actionBarSize"
             android:background="?selectableItemBackgroundBorderless"

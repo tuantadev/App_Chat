@@ -24,7 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.chat.Chat"/>
-        <activity android:name=".ui.gallery.ImageGalleryAcrivity"/>
+        <activity android:name=".ui.gallery.ImageGalleryActivity"/>
+        <activity android:name=".ui.chat.ShowImageFrag"/>
     </application>
 
 </manifest>

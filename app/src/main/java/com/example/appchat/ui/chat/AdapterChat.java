@@ -79,20 +79,32 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 holderText.tv.setText(messageChatResponse.getContent());
                 break;
             case SEND_IMG:
-                SendImageViewHolder sendImage = (SendImageViewHolder) viewHolder;
+                final SendImageViewHolder sendImage = (SendImageViewHolder) viewHolder;
                 GlideApp.with(sendImage.im)
                         .load(Common.getLinkImage(messageChatResponse.getContent()))
                         .error(R.drawable.default_ava)
                         .placeholder(R.drawable.default_ava)
                         .into(sendImage.im);
+                sendImage.im.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        inter.itemCLick(sendImage.getAdapterPosition());
+                    }
+                });
                 break;
             case RECEIVE_IMG:
-                ReceiveImageViewHolder reImage = (ReceiveImageViewHolder) viewHolder;
+                final ReceiveImageViewHolder reImage = (ReceiveImageViewHolder) viewHolder;
                 GlideApp.with(reImage.im)
                         .load(Common.getLinkImage(messageChatResponse.getContent()))
                         .error(R.drawable.default_ava)
                         .placeholder(R.drawable.default_ava)
                         .into(reImage.im);
+                reImage.im.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        inter.itemCLick(reImage.getAdapterPosition());
+                    }
+                });
                 break;
             default:
                 break;
@@ -101,7 +113,7 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public interface IChat {
         int getCount();
-
+        void itemCLick(int pos);
         MessageChatResponse getData(int pos);
     }
 
@@ -111,12 +123,10 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     static class SendViewHolder extends RecyclerView.ViewHolder {
-        private ImageView im;
         private TextView tv;
 
         public SendViewHolder(@NonNull View itemView) {
             super(itemView);
-            im = itemView.findViewById(R.id.avatar_chat);
             tv = itemView.findViewById(R.id.tv_chat);
         }
     }

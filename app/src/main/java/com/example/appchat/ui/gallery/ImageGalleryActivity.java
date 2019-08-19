@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,9 +19,10 @@ import com.example.appchat.model.ImageData;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImageGalleryAcrivity extends AppCompatActivity implements GalleryAdapter.IGalleryAdapter {
+public class ImageGalleryActivity extends AppCompatActivity implements GalleryAdapter.IGalleryAdapter {
     private RecyclerView rcImages;
     private List<ImageData> imageDatas;
+    private Button back;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,12 @@ public class ImageGalleryAcrivity extends AppCompatActivity implements GalleryAd
         rcImages = findViewById(R.id.rc_images);
         rcImages.setLayoutManager(new GridLayoutManager(this, 3));
         rcImages.setAdapter(new GalleryAdapter(this));
+        findViewById(R.id.btn_back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         loadImageData();
     }
 
