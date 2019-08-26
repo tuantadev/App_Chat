@@ -4,7 +4,17 @@
             "outputFile": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/res/values-land/values-land.xml",
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/b5d3baec1fff27bb8f7fb8bd8dd80919/material-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
-                    }
-                },
-                {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/2038bd8051f83454bfbffb2609c6ad1a/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

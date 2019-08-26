@@ -4,7 +4,7 @@
             "outputFile": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/c2eba6c5adc9a53349677702ed8da46e/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/b5d3baec1fff27bb8f7fb8bd8dd80919/material-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/2038bd8051f83454bfbffb2609c6ad1a/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

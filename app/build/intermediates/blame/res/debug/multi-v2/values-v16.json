@@ -4,7 +4,7 @@
             "outputFile": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/2038bd8051f83454bfbffb2609c6ad1a/res/values-v16/values-v16.xml",
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/b286a4ef77ca6c6094b4b061859d8754/res/values-v16/values-v16.xml",
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/d375a18d05e24e66d77709f6863c689c/core-1.0.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

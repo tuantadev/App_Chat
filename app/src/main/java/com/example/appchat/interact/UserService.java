@@ -1,6 +1,6 @@
 package com.example.appchat.interact;
 
-import com.example.appchat.model.UpdateInfoUser;
+import com.example.appchat.model.request.ChangeAvatarRequest;
 import com.example.appchat.model.request.RegisterRequest;
 import com.example.appchat.model.response.BaseResponse;
 import com.example.appchat.model.response.FriendResponse;
@@ -34,11 +34,6 @@ public interface UserService {
             @Body LoginRequest loginRequest
     );
 
-    @POST("/users/updateInfo")
-    Call<BaseResponse<UserProfile>> updateInfo(
-        @Body UpdateInfoUser updateInfoUser
-    );
-
     @POST("/users/register")
     Call<BaseResponse> postInfoRegister(
             @Body RegisterRequest registerRequest
@@ -48,5 +43,10 @@ public interface UserService {
     @POST("/postImage")
     Call<String> upload(
             @Part MultipartBody.Part image
+    );
+
+    @POST("/users/changeAvatar")
+    Call<UserProfile> changeAvartar(
+            @Body ChangeAvatarRequest changeAvatarRequest
     );
 }

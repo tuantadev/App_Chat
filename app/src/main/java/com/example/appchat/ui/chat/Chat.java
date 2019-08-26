@@ -69,7 +69,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
 
     private void init() {
         Glide.with(this)
-                .load(CommonData.getInstance().getUserProfile().getAvatar())
+                .load(friendResponse.getFriendAvatar())
                 .error(R.drawable.default_ava)
                 .placeholder(R.drawable.default_ava)
                 .into((ImageView)
@@ -78,14 +78,14 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
                 .getUserProfile()
                 .getNameofchat());
 
-        if (friendResponse.getFriendAvatar() == null) {
-            Glide.with(this)
-                    .load(friendResponse.getFriendAvatar())
-                    .error(R.drawable.default_ava)
-                    .placeholder(R.drawable.default_ava)
-                    .into((ImageView)
-                            findViewById(R.id.iv_avatar));
-        }
+//        if (friendResponse.getFriendAvatar() == null) {
+//            Glide.with(this)
+//                    .load(friendResponse.getFriendAvatar())
+//                    .error(R.drawable.default_ava)
+//                    .placeholder(R.drawable.default_ava)
+//                    .into((ImageView)
+//                            findViewById(R.id.iv_avatar));
+//        }
         ((TextView) findViewById(R.id.name_or_nickname)).setText(friendResponse.getFriendNameofchat());
 
         userService.getHistoryChat(CommonData.getInstance().getUserProfile().getId(),

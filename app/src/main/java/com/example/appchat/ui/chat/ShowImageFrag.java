@@ -22,7 +22,7 @@ public class ShowImageFrag extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.show_image_onmess);
         Intent intent = getIntent();
         im = findViewById(R.id.show_img_mess);
-        System.out.println("frag"+Common.getLinkImage(intent.getStringExtra("PATH")));
+        System.out.println(Common.getLinkImage(intent.getStringExtra("PATH")));
         findViewById(R.id.btn_back_chat).setOnClickListener(this);
         GlideApp.with(this)
                 .load(Common.getLinkImage(intent.getStringExtra("PATH")))

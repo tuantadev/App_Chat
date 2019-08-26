@@ -10,6 +10,7 @@ public class UserProfile implements Serializable {
     private String avatar;
     private String nameofchat;
     private String createdTime;
+    private String phonenumber;
 
     public int getId() {
         return id;
@@ -57,5 +58,13 @@ public class UserProfile implements Serializable {
 
     public void setCreatedTime(String createdTime) {
         this.createdTime = createdTime;
+    }
+
+    public String getPhonenumber() {
+        return phonenumber;
+    }
+
+    public void setPhonenumber(String phonenumber) {
+        this.phonenumber = phonenumber;
     }
 }
