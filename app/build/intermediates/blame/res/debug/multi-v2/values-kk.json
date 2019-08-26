@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
+            "outputFile": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
             "map": [
+                {
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/9730f230586d010e5206a51d7b6071d3/res/values-kk/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "98",
+                        "endOffsets": "303"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5518",
+                        "endColumns": "102",
+                        "endOffsets": "5616"
+                    }
+                },
                 {
                     "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/res/values-kk/values.xml",
                     "from": {
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/res/values-kk/values.xml",
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/24b921a527180c4ae0917320c20dfd0c/res/values-kk/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -69,23 +86,6 @@
                         "startOffsets": "5702",
                         "endColumns": "100",
                         "endOffsets": "5798"
-                    }
-                },
-                {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/res/values-kk/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "98",
-                        "endOffsets": "303"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5518",
-                        "endColumns": "102",
-                        "endOffsets": "5616"
                     }
                 }
             ]

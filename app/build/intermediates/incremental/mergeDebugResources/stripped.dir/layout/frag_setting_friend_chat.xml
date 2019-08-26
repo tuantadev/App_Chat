@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/collapse2">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_in_set">
+
+        <LinearLayout
+            android:id="@+id/change_color_mess"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="48dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Color"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="0"
+                android:layout_width="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/color_icon"
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/change_emoji"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="48dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Emoji"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:layout_width="32dp"
+                android:src="@drawable/emoji"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/setting_nickname"
+            android:layout_width="wrap_content"
+            android:text="Nicknames"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="More Actions"
+            android:textColor="#455A64"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Notification"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Ignore"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Block"
+            android:gravity="center"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Share Photos"
+            android:textColor="#455A64"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/toolbar_image"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="256dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_ava" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kis Lupin"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_image" />
+
+    <TextView
+        android:id="@+id/status_in_set"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="active"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rc_photo_in_setting_friend_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

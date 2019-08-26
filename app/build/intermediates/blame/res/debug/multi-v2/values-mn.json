@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
             "map": [
-                {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/5ca688995a6b77303125778aa28d83d8/res/values-mn/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "208",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3961",
-                        "endColumns": "208",
-                        "endOffsets": "4165"
-                    }
-                },
                 {
                     "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/9d68a1e8e354cb301e2cb32b6d83e847/res/values-mn/values.xml",
                     "from": {
@@ -35,6 +18,23 @@
                         "startOffsets": "2795,2907,3096,3230,3339,3535,3663,3822,4170,4373,4482,4681,4812,5012,5210,5301,5393",
                         "endColumns": "111,188,133,108,195,127,158,138,202,108,198,130,199,197,90,91,105",
                         "endOffsets": "2902,3091,3225,3334,3530,3658,3817,3956,4368,4477,4676,4807,5007,5205,5296,5388,5494"
+                    }
+                },
+                {
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/9730f230586d010e5206a51d7b6071d3/res/values-mn/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "99",
+                        "endOffsets": "304"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5499",
+                        "endColumns": "103",
+                        "endOffsets": "5598"
                     }
                 },
                 {
@@ -55,20 +55,20 @@
                     }
                 },
                 {
-                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/b202bb94da17875728f5033c674dbfb2/res/values-mn/values.xml",
+                    "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/24b921a527180c4ae0917320c20dfd0c/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "99",
-                        "endOffsets": "304"
+                        "startOffsets": "247",
+                        "endColumns": "208",
+                        "endOffsets": "455"
                     },
                     "to": {
-                        "startLines": "47",
+                        "startLines": "37",
                         "startColumns": "4",
-                        "startOffsets": "5499",
-                        "endColumns": "103",
-                        "endOffsets": "5598"
+                        "startOffsets": "3961",
+                        "endColumns": "208",
+                        "endOffsets": "4165"
                     }
                 },
                 {

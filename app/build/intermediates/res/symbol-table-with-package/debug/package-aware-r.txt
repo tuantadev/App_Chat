@@ -1302,6 +1302,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id done
 id dragDown
 id dragLeft
 id dragRight
@@ -1371,6 +1372,7 @@ id name_or_nickname
 id navigation_header_container
 id never
 id new_mess
+id nickname_in_setting
 id none
 id normal
 id notification_background
@@ -1434,6 +1436,7 @@ id select_dialog_listview
 id selected
 id send_image
 id send_mess
+id setting_ava
 id setting_nickname
 id shortcut
 id showCustom
@@ -1508,7 +1511,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id username_in_setting
 id username_login
 id username_register
 id username_setting

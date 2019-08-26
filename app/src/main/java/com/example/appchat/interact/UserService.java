@@ -1,13 +1,13 @@
 package com.example.appchat.interact;
 
+import com.example.appchat.model.UpdateInfoUser;
+import com.example.appchat.model.request.RegisterRequest;
 import com.example.appchat.model.response.BaseResponse;
 import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.model.UserProfile;
 import com.example.appchat.model.request.LoginRequest;
 import com.example.appchat.model.response.MessageChatResponse;
-
 import java.util.List;
-
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -32,6 +32,16 @@ public interface UserService {
     @POST("/users/login")
     Call<BaseResponse<UserProfile>> postInfoLogin(
             @Body LoginRequest loginRequest
+    );
+
+    @POST("/users/updateInfo")
+    Call<BaseResponse<UserProfile>> updateInfo(
+        @Body UpdateInfoUser updateInfoUser
+    );
+
+    @POST("/users/register")
+    Call<BaseResponse> postInfoRegister(
+            @Body RegisterRequest registerRequest
     );
 
     @Multipart

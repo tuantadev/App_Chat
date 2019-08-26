@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kislupin/Downloads/App_Chat-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/1e3a844d8d81b5a12cc1d4f5b7754dc0/res/values-v23/values-v23.xml",

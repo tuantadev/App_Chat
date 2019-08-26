@@ -31,8 +31,7 @@ public class FriendFrag extends Fragment implements FriendAdapter.IFriend {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.frag_friends, container, false);
-        return v;
+        return inflater.inflate(R.layout.frag_friends, container, false);
     }
 
     @Override

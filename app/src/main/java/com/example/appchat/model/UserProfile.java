@@ -1,13 +1,14 @@
 package com.example.appchat.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class UserProfile {
+public class UserProfile implements Serializable {
     private int id;
     private String username;
     private String password;
     private String avatar;
-    private String name_of_chat;
+    private String nameofchat;
     private String createdTime;
 
     public int getId() {
@@ -42,12 +43,12 @@ public class UserProfile {
         this.avatar = avatar;
     }
 
-    public String getName_of_chat() {
-        return name_of_chat;
+    public String getNameofchat() {
+        return nameofchat;
     }
 
-    public void setName_of_chat(String name_of_chat) {
-        this.name_of_chat = name_of_chat;
+    public void setNameofchat(String nameofchat) {
+        this.nameofchat = nameofchat;
     }
 
     public String getCreatedTime() {

@@ -76,7 +76,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
                         findViewById(R.id.click_setting_fri_chat));
         ((TextView) findViewById(R.id.name_or_nickname)).setText(CommonData.getInstance()
                 .getUserProfile()
-                .getName_of_chat());
+                .getNameofchat());
 
         if (friendResponse.getFriendAvatar() == null) {
             Glide.with(this)
@@ -116,7 +116,6 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
     public void itemCLick(int pos) {
         Intent intent = new Intent();
         intent.putExtra("PATH",messages.get(pos).getContent());
-        System.out.println(messages.get(pos).getContent());
         intent.setClass(this,ShowImageFrag.class);
         startActivity(intent);
     }
@@ -234,4 +233,5 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
         SocketManager.getInstance().unregister(this);
         super.onDestroy();
     }
+
 }

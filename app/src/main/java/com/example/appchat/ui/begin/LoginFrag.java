@@ -50,32 +50,38 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        final LoginRequest loginRequest = new LoginRequest();
-        loginRequest.setUsername(username_login.getText().toString());
-        loginRequest.setPassword(password_login.getText().toString());
-        userService.postInfoLogin(loginRequest).enqueue(new Callback<BaseResponse<UserProfile>>() {
-            @Override
-            public void onResponse(Call<BaseResponse<UserProfile>> call,
-                                   Response<BaseResponse<UserProfile>> response) {
-                if (response.body().getStatus() != 1) {
-                    Toast.makeText(getContext(),
-                            response.body().getMessage(), Toast.LENGTH_SHORT);
-                } else {
-                    loginSuccess(response.body().getData());
-                }
-            }
+        switch (view.getId()){
+            case R.id.btn_login:
+                final LoginRequest loginRequest = new LoginRequest();
+                loginRequest.setUsername(username_login.getText().toString());
+                loginRequest.setPassword(password_login.getText().toString());
+                userService.postInfoLogin(loginRequest).enqueue(new Callback<BaseResponse<UserProfile>>() {
+                    @Override
+                    public void onResponse(Call<BaseResponse<UserProfile>> call,
+                                           Response<BaseResponse<UserProfile>> response) {
+                        if (response.body().getStatus() != 1) {
+                            Toast.makeText(getContext(),
+                                    response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                        } else {
+                            loginSuccess(response.body().getData());
+                        }
+                    }
+                    @Override
+                    public void onFailure(Call<BaseResponse<UserProfile>> call, Throwable t) {
+                        System.out.println("connect is fail");
+                    }
+                });
+                break;
+            case R.id.btn_register:
+                ((MainActivity)getActivity()).openRegister();
+                break;
+        }
 
-            @Override
-            public void onFailure(Call<BaseResponse<UserProfile>> call, Throwable t) {
-                System.out.println("connect is fail");
-            }
-        });
     }
     private void loginSuccess(UserProfile userProfile){
         CommonData.getInstance().setUserProfile(userProfile);
         SocketManager.getInstance().connect();
         ((MainActivity)getActivity()).openMainChat();
-//        getActivity().finish();
     }
 
 }

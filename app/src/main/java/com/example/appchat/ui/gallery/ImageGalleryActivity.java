@@ -7,15 +7,12 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.appchat.R;
 import com.example.appchat.model.ImageData;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,7 +60,6 @@ public class ImageGalleryActivity extends AppCompatActivity implements GalleryAd
                 }
                 return imageDatas;
             }
-
             @Override
             protected void onPostExecute(List<ImageData> imageData) {
                 imageDatas = imageData;
