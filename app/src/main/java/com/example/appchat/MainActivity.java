@@ -4,7 +4,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.appchat.ui.begin.RegisterFrag;
-import com.example.appchat.ui.main.ChatFrag;
+import com.example.appchat.ui.main.chat.ChatFrag;
 import com.example.appchat.ui.begin.LoginFrag;
 
 public class MainActivity extends AppCompatActivity {

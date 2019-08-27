@@ -23,6 +23,7 @@ import com.example.appchat.model.response.MessageChatResponse;
 import com.example.appchat.socket.ReceiverMess;
 import com.example.appchat.socket.SocketManager;
 import com.example.appchat.ui.gallery.ImageGalleryActivity;
+import com.example.appchat.ui.setting.friends.SettingFriendActivity;
 import com.google.gson.Gson;
 
 import java.io.File;
@@ -65,6 +66,7 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
         init();
         SocketManager.getInstance().register(this);
         findViewById(R.id.take_photo_in_mess).setOnClickListener(this);
+        findViewById(R.id.make_configure).setOnClickListener(this);
     }
 
     private void init() {
@@ -78,14 +80,6 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
                 .getUserProfile()
                 .getNameofchat());
 
-//        if (friendResponse.getFriendAvatar() == null) {
-//            Glide.with(this)
-//                    .load(friendResponse.getFriendAvatar())
-//                    .error(R.drawable.default_ava)
-//                    .placeholder(R.drawable.default_ava)
-//                    .into((ImageView)
-//                            findViewById(R.id.iv_avatar));
-//        }
         ((TextView) findViewById(R.id.name_or_nickname)).setText(friendResponse.getFriendNameofchat());
 
         userService.getHistoryChat(CommonData.getInstance().getUserProfile().getId(),
@@ -139,6 +133,12 @@ public class Chat extends AppCompatActivity implements AdapterChat.IChat, View.O
                 Intent intent = new Intent();
                 intent.setClass(this, ImageGalleryActivity.class);
                 startActivityForResult(intent, 100);
+                break;
+            case R.id.make_configure:
+                Intent intent1 = new Intent();
+                intent1.setClass(this, SettingFriendActivity.class);
+                intent1.putExtra("detail",friendResponse);
+                startActivity(intent1);
                 break;
             default:
                 break;

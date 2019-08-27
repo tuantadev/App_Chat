@@ -356,6 +356,10 @@
         "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/anim/abc_fade_out.xml"
     },
     {
+        "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/layout_frag_friend_to_add.xml.flat",
+        "source": "/Users/kislupin/Desktop/App_Chat/app/src/main/res/layout/frag_friend_to_add.xml"
+    },
+    {
         "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
         "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/drawable/abc_textfield_search_material.xml"
     },
@@ -620,6 +624,10 @@
         "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_add.png.flat",
+        "source": "/Users/kislupin/Desktop/App_Chat/app/src/main/res/drawable-xxxhdpi/add.png"
+    },
+    {
         "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/animator_design_fab_show_motion_spec.xml.flat",
         "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/b5d3baec1fff27bb8f7fb8bd8dd80919/material-1.0.0/res/animator/design_fab_show_motion_spec.xml"
     },
@@ -694,6 +702,10 @@
     {
         "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/layout_frag_add_friends.xml.flat",
+        "source": "/Users/kislupin/Desktop/App_Chat/app/src/main/res/layout/frag_add_friends.xml"
     },
     {
         "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1198,6 +1210,10 @@
     {
         "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/kislupin/.gradle/caches/transforms-2/files-2.1/750b7b2b4898fa70c0985966489aeed6/appcompat-1.0.2/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi_add.png.flat",
+        "source": "/Users/kislupin/Desktop/App_Chat/app/src/main/res/drawable-xxhdpi/add.png"
     },
     {
         "merged": "/Users/kislupin/Desktop/App_Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",

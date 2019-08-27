@@ -38,7 +38,8 @@
         <activity android:name="com.example.appchat.ui.chat.Chat" />
         <activity android:name="com.example.appchat.ui.gallery.ImageGalleryActivity" />
         <activity android:name="com.example.appchat.ui.chat.ShowImageFrag" />
-        <activity android:name="com.example.appchat.ui.setting.ManagerUserProfileFrag" />
+        <activity android:name="com.example.appchat.ui.setting.user.ManagerUserProfileFrag" />
+        <activity android:name="com.example.appchat.ui.setting.friends.SettingFriendActivity" />
         <!--
              FirebaseMessagingService performs security checks at runtime,
              but set to not exported to explicitly avoid allowing another app to call it.

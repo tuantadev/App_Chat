@@ -1131,6 +1131,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -1250,6 +1251,7 @@ id anticipate
 id asConfigured
 id async
 id auto
+id avatar_another
 id avatar_chat
 id avatar_main
 id backButton
@@ -1351,6 +1353,7 @@ id jumpToStart
 id keep_sign_in
 id labeled
 id largeLabel
+id last_mess
 id lay_down
 id left
 id light
@@ -1359,6 +1362,7 @@ id line3
 id linear
 id listMode
 id list_item
+id make_configure
 id masked
 id media_actions
 id message
@@ -1368,6 +1372,8 @@ id motionLayout
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name_of_another
+id name_of_chat_register
 id name_or_nickname
 id navigation_header_container
 id never
@@ -1400,6 +1406,7 @@ id progress_horizontal
 id pull_out
 id radio
 id rc_friend
+id rc_friends
 id rc_images
 id rc_photo
 id rc_photo_in_setting_friend_chat
@@ -1586,10 +1593,12 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout frag_add_friends
 layout frag_chat_mess
 layout frag_collapse
 layout frag_collapse_meta_end
 layout frag_friend_chat
+layout frag_friend_to_add
 layout frag_friends
 layout frag_login
 layout frag_main

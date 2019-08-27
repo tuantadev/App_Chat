@@ -3,6 +3,7 @@ package com.example.appchat.interact;
 import com.example.appchat.model.UserProfile;
 
 public class CommonData {
+
     private UserProfile userProfile;
     private static CommonData instance;
 
@@ -14,6 +15,7 @@ public class CommonData {
     }
 
     public CommonData() {
+
     }
 
     public UserProfile getUserProfile() {

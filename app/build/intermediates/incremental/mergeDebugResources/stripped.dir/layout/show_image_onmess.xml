@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:src="@drawable/back"
+        android:layout_margin="4dp"
+        android:id="@+id/btn_back_chat"
+        android:background="?actionBarItemBackground"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/show_img_mess"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
 MERGED from [androidx.databinding:databinding-adapters:3.5.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/8d968ed946853e14f7641e5d1ffd7ebe/databinding-adapters-3.5.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.5.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/e245de9ff396bbc01db2988fe2dcf579/databinding-runtime-3.5.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/876438fe76c327ce43feb89c814b69a1/constraintlayout-2.0.0-alpha2/AndroidManifest.xml:2:1-11:12
@@ -54,20 +54,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/c78dc2f831de896d8d6d90481d16bce0/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/a4151e2035fccbb551e016f96d0000f0/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/f0242482827f2382b7bcad26afc23ac1/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
+		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-32:12
+		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:2:11-69
@@ -90,7 +90,7 @@ ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:8:5
 	android:name
 		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:10:5-30:19
+ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:10:5-31:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/876438fe76c327ce43feb89c814b69a1/constraintlayout-2.0.0-alpha2/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/876438fe76c327ce43feb89c814b69a1/constraintlayout-2.0.0-alpha2/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/kislupin/.gradle/caches/transforms-2/files-2.1/b5d3baec1fff27bb8f7fb8bd8dd80919/material-1.0.0/AndroidManifest.xml:22:5-20
@@ -165,10 +165,14 @@ activity#com.example.appchat.ui.chat.ShowImageFrag
 ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:28:9-58
 	android:name
 		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:28:19-56
-activity#com.example.appchat.ui.setting.ManagerUserProfileFrag
-ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:29:9-70
+activity#com.example.appchat.ui.setting.user.ManagerUserProfileFrag
+ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:29:9-75
 	android:name
-		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:29:19-68
+		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:29:19-73
+activity#com.example.appchat.ui.setting.friends.SettingFriendActivity
+ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:30:9-77
+	android:name
+		ADDED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml:30:19-75
 uses-sdk
 INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/kislupin/Desktop/App_Chat/app/src/main/AndroidManifest.xml

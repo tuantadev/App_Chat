@@ -25,7 +25,7 @@ import retrofit2.Response;
 
 public class RegisterFrag extends Fragment implements View.OnClickListener {
 
-    private EditText username_regist,pass_regist,re_pass_regist;
+    private EditText username_regist,pass_regist,re_pass_regist,name_of_chat;
     private UserService userService;
     @Nullable
     @Override
@@ -40,6 +40,7 @@ public class RegisterFrag extends Fragment implements View.OnClickListener {
         username_regist = view.findViewById(R.id.username_register);
         pass_regist = view.findViewById(R.id.password_register);
         re_pass_regist = view.findViewById(R.id.re_password_register);
+        name_of_chat = view.findViewById(R.id.name_of_chat_register);
         userService = Common.getUserService();
     }
 
@@ -51,6 +52,7 @@ public class RegisterFrag extends Fragment implements View.OnClickListener {
                     final RegisterRequest registerRequest = new RegisterRequest();
                     registerRequest.setUsername(username_regist.getText().toString());
                     registerRequest.setPassword(pass_regist.getText().toString());
+                    registerRequest.setName_of_chat(name_of_chat.getText().toString());
                     userService.postInfoRegister(registerRequest).enqueue(new Callback<BaseResponse>() {
                         @Override
                         public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
