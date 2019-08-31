@@ -10,19 +10,26 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
 import com.example.appchat.R;
 import com.example.appchat.interact.CommonData;
+import com.example.appchat.model.response.StoryFriendResponse;
+import com.example.appchat.ui.chat.Chat;
+import com.example.appchat.ui.main.story.StoryMainAdapter;
 import com.example.appchat.ui.setting.user.ManagerUserProfileFrag;
 import com.google.android.material.tabs.TabLayout;
 
-public class ChatFrag extends Fragment implements View.OnClickListener {
+import java.util.List;
+
+public class ChatFrag extends Fragment implements StoryMainAdapter.IStoryMain,View.OnClickListener {
 
     private ViewPager vp;
-    private ImageView ava;
-
+    private ImageView ava,friendAva;
+    private List<StoryFriendResponse> storyFriendResponses;
+    private RecyclerView rc;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -36,11 +43,15 @@ public class ChatFrag extends Fragment implements View.OnClickListener {
         TabLayout tab = view.findViewById(R.id.tab);
         tab.setupWithViewPager(vp);
         ava = view.findViewById(R.id.avatar_main);
+        rc = view.findViewById(R.id.rc_story_friend);
+        friendAva = view.findViewById(R.id.iv_avatar_story);
         Glide.with(ava)
                 .load(CommonData.getInstance().getUserProfile().getAvatar())
                 .error(R.drawable.default_ava)
                 .into(ava);
         vp.setAdapter(new ChatMainAdapter(getChildFragmentManager()));
+        rc.setAdapter(new StoryMainAdapter(this));
+        rc.setOnClickListener(this);
         ava.setOnClickListener(this);
     }
 
@@ -66,5 +77,27 @@ public class ChatFrag extends Fragment implements View.OnClickListener {
                 .load(CommonData.getInstance().getUserProfile().getAvatar())
                 .error(R.drawable.default_ava)
                 .into(ava);
+    }
+
+    @Override
+    public int getCount() {
+        if(storyFriendResponses == null){
+            return 0;
+        }else {
+            return storyFriendResponses.size();
+        }
+    }
+
+    @Override
+    public StoryFriendResponse getData(int positions) {
+        return storyFriendResponses.get(positions);
+    }
+
+    @Override
+    public void onClick(int pos) {
+        Intent intent = new Intent();
+        intent.setClass(getContext(), Chat.class);
+        intent.putExtra("CHAT",storyFriendResponses.get(pos));
+        startActivity(intent);
     }
 }

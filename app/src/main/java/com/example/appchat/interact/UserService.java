@@ -9,12 +9,14 @@ import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.model.UserProfile;
 import com.example.appchat.model.request.LoginRequest;
 import com.example.appchat.model.response.MessageChatResponse;
+import com.example.appchat.model.response.StoryFriendResponse;
+
 import java.util.List;
+
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
-import retrofit2.http.HTTP;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
@@ -62,5 +64,10 @@ public interface UserService {
     @POST(value = "/users/getAllLastMess")
     Call<List<MessageChatResponse>> getAllLastMess(
             @Body List<LastMess> lastMesses
+    );
+
+    @GET(value = "users/getAllFriendStory")
+    Call<BaseResponse<List<StoryFriendResponse>>> getStoryChatFriend(
+            @Query("userId") int userId
     );
 }

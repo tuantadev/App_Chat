@@ -92,11 +92,14 @@
 
     <LinearLayout
         android:id="@+id/story"
-        android:background="#000000"
         android:layout_width="match_parent"
         android:layout_height="64dp"
+        android:background="#000000"
         android:orientation="horizontal">
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rc_story_friend"
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager

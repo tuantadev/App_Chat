@@ -4,22 +4,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.appchat.GlideApp;
 import com.example.appchat.R;
+import com.example.appchat.model.response.StoryFriendResponse;
 
 
 public class StoryMainAdapter extends RecyclerView.Adapter<StoryMainAdapter.StoryMainHolder> {
     private IStoryMain iStoryMain;
 
-    public StoryMainAdapter(IStoryMain iStoryMainAdapter) {
-        this.iStoryMain = iStoryMainAdapter;
+    public StoryMainAdapter(IStoryMain IStoryMain) {
+        this.iStoryMain = IStoryMain;
     }
-
-
     @NonNull
     @Override
     public StoryMainHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,8 +28,8 @@ public class StoryMainAdapter extends RecyclerView.Adapter<StoryMainAdapter.Stor
 
     @Override
     public void onBindViewHolder(@NonNull final StoryMainHolder holder, final int position) {
-        StoryMain storyMain = iStoryMain.getData(position);
-        if (storyMain.getmAvatar() == null) {
+        StoryFriendResponse storyChatReponse = iStoryMain.getData(position);
+        if (storyChatReponse.getFriend_avatar() == null) {
             GlideApp.with(holder.itemView)
                     .load(R.drawable.default_ava)
                     .into(holder.iv);
@@ -55,17 +55,18 @@ public class StoryMainAdapter extends RecyclerView.Adapter<StoryMainAdapter.Stor
 
     public interface IStoryMain {
         int getCount();
-        StoryMain getData(int positions);
+        StoryFriendResponse getData(int positions);
         void onClick(int pos);
     }
 
     static class StoryMainHolder extends RecyclerView.ViewHolder {
         private ImageView iv;
+        private TextView tv;
 
         public StoryMainHolder(@NonNull View itemView) {
             super(itemView);
-            iv = itemView.findViewById(R.id.avatar_story);
+            iv = itemView.findViewById(R.id.iv_avatar_story);
+            tv = itemView.findViewById(R.id.tv_namestory);
         }
     }
-
 }

@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/avatar_story"
+            android:id="@+id/iv_avatar_story"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:src="@drawable/default_ava"

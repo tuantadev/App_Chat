@@ -1347,6 +1347,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id iv_avatar
+id iv_avatar_story
 id iv_img
 id jumpToEnd
 id jumpToStart
@@ -1410,6 +1411,7 @@ id rc_friends
 id rc_images
 id rc_photo
 id rc_photo_in_setting_friend_chat
+id rc_story_friend
 id re_password_register
 id rectangles
 id register
@@ -1513,6 +1515,7 @@ id transition_transform
 id triangle
 id tv_
 id tv_chat
+id tv_namestory
 id tv_username
 id uniform
 id unlabeled
@@ -1633,6 +1636,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout send_message
 layout show_image_onmess
+layout story_chat_item
 layout support_simple_spinner_dropdown_item
 layout test
 layout user_chat
