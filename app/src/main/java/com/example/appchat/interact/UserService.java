@@ -67,7 +67,7 @@ public interface UserService {
     );
 
     @GET(value = "users/getAllFriendStory")
-    Call<BaseResponse<List<StoryFriendResponse>>> getStoryChatFriend(
+    Call<BaseResponse<List<StoryFriendResponse>>> getAllFriendStory(
             @Query("userId") int userId
     );
 }

@@ -1,4 +1,4 @@
-package com.example.appchat.ui.main.story;
+package com.example.appchat.ui.main.chat;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +14,10 @@ import com.example.appchat.R;
 import com.example.appchat.model.response.StoryFriendResponse;
 
 
-public class StoryMainAdapter extends RecyclerView.Adapter<StoryMainAdapter.StoryMainHolder> {
+public class StoryFriendAdapter extends RecyclerView.Adapter<StoryFriendAdapter.StoryMainHolder> {
     private IStoryMain iStoryMain;
 
-    public StoryMainAdapter(IStoryMain IStoryMain) {
+    public StoryFriendAdapter(IStoryMain IStoryMain) {
         this.iStoryMain = IStoryMain;
     }
     @NonNull
@@ -40,6 +40,7 @@ public class StoryMainAdapter extends RecyclerView.Adapter<StoryMainAdapter.Stor
                     .placeholder(R.drawable.default_ava)
                     .into(holder.iv);
         }
+        holder.tv.setText(storyChatReponse.getFriend_nameofchat());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

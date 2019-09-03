@@ -1428,6 +1428,10 @@
         "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\frag_chat_mess.xml"
     },
     {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_frag_story_chat.xml.flat",
+        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\frag_story_chat.xml"
+    },
+    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\23e989389d623ddbded50da53ee3a66f\\material-1.0.0\\res\\color\\mtrl_text_btn_text_color_selector.xml"
     },

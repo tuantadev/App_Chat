@@ -1329,6 +1329,7 @@ id fixed
 id flip
 id forever
 id forget
+id frag_story_chat
 id frame
 id ghost_view
 id glide_custom_view_target_tag
@@ -1609,6 +1610,7 @@ layout frag_manager_user_profile
 layout frag_photo_image_in_chat
 layout frag_register
 layout frag_setting_friend_chat
+layout frag_story_chat
 layout friend_chat
 layout item_receive_image
 layout item_send_image

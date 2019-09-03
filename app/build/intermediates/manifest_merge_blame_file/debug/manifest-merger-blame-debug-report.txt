@@ -49,111 +49,112 @@
 26-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:14:9-54
 27        android:supportsRtl="true"
 27-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:15:9-35
-28        android:theme="@style/AppTheme" >
-28-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:17:9-40
-29        <activity android:name="com.example.appchat.MainActivity" >
-29-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:19:9-25:20
-29-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:19:19-47
-30            <intent-filter>
-30-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:20:13-24:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:21:17-69
-31-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:21:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:23:17-77
-33-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:23:27-74
-34            </intent-filter>
-35        </activity>
-36        <activity android:name="com.example.appchat.ui.chat.Chat" />
-36-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:26:9-49
-36-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:26:19-47
-37        <activity android:name="com.example.appchat.ui.gallery.ImageGalleryActivity" />
-37-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:27:9-68
-37-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:27:19-66
-38        <activity android:name="com.example.appchat.ui.chat.ShowImageFrag" />
-38-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:28:9-58
-38-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:28:19-56
-39        <activity android:name="com.example.appchat.ui.setting.user.ManagerUserProfileFrag" />
-39-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:29:9-75
-39-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:29:19-73
-40        <activity android:name="com.example.appchat.ui.setting.friends.SettingFriendActivity" />
-40-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:30:9-77
-40-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:30:19-75
-41        <!--
-42             FirebaseMessagingService performs security checks at runtime,
-43             but set to not exported to explicitly avoid allowing another app to call it.
-44        -->
-45        <service
-45-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
-46            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-46-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
-47            android:exported="false" >
-47-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
-48            <intent-filter android:priority="-500" >
-48-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:13-33:29
-48-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:28-51
-49                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-49-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:17-78
-49-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:25-75
-50            </intent-filter>
-51        </service>
-52        <service
-52-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:29:9-35:19
-53            android:name="com.google.firebase.components.ComponentDiscoveryService"
-53-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:30:13-84
-54            android:exported="false" >
-54-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:31:13-37
-55            <meta-data
-55-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
-56                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-56-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
-57                android:value="com.google.firebase.components.ComponentRegistrar" />
-57-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
-58        </service>
-59
-60        <receiver
-60-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
-61            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-61-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
-62            android:exported="true"
-62-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
-63            android:permission="com.google.android.c2dm.permission.SEND" >
-63-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
-64            <intent-filter>
-64-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
-65                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-65-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:42:17-81
-65-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:42:25-78
-66            </intent-filter>
-67        </receiver>
-68
-69        <provider
-69-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
-70            android:name="com.google.firebase.provider.FirebaseInitProvider"
-70-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
-71            android:authorities="com.example.appchat.firebaseinitprovider"
-71-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
-72            android:exported="false"
-72-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
-73            android:initOrder="100" />
-73-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
-74
-75        <activity
-75-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-76            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-76-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-77            android:exported="false"
-77-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-78            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-78-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-79
-80        <meta-data
-80-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd9baa2e773e9889eeec61f05254c4d6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-81            android:name="com.google.android.gms.version"
-81-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd9baa2e773e9889eeec61f05254c4d6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-82            android:value="@integer/google_play_services_version" />
-82-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd9baa2e773e9889eeec61f05254c4d6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-83    </application>
-84
-85</manifest>
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:17:9-40
+30        <activity android:name="com.example.appchat.MainActivity" >
+30-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:19:9-25:20
+30-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:19:19-47
+31            <intent-filter>
+31-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:20:13-24:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:21:17-69
+32-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:21:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:23:17-77
+34-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:23:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.example.appchat.ui.chat.Chat" />
+37-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:26:9-49
+37-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:26:19-47
+38        <activity android:name="com.example.appchat.ui.gallery.ImageGalleryActivity" />
+38-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:27:9-68
+38-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:27:19-66
+39        <activity android:name="com.example.appchat.ui.chat.ShowImageFrag" />
+39-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:28:9-58
+39-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:28:19-56
+40        <activity android:name="com.example.appchat.ui.setting.user.ManagerUserProfileFrag" />
+40-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:29:9-75
+40-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:29:19-73
+41        <activity android:name="com.example.appchat.ui.setting.friends.SettingFriendActivity" />
+41-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:30:9-77
+41-->F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:30:19-75
+42        <!--
+43             FirebaseMessagingService performs security checks at runtime,
+44             but set to not exported to explicitly avoid allowing another app to call it.
+45        -->
+46        <service
+46-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
+47            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+47-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
+48            android:exported="false" >
+48-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
+49            <intent-filter android:priority="-500" >
+49-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:13-33:29
+49-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:28-51
+50                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+50-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:17-78
+50-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\56fe8371462d94b17e5173f2b9cc2423\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:25-75
+51            </intent-filter>
+52        </service>
+53        <service
+53-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:29:9-35:19
+54            android:name="com.google.firebase.components.ComponentDiscoveryService"
+54-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:30:13-84
+55            android:exported="false" >
+55-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:31:13-37
+56            <meta-data
+56-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
+57                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+57-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
+58                android:value="com.google.firebase.components.ComponentRegistrar" />
+58-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
+59        </service>
+60
+61        <receiver
+61-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
+62            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+62-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
+63            android:exported="true"
+63-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
+64            android:permission="com.google.android.c2dm.permission.SEND" >
+64-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
+65            <intent-filter>
+65-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
+66                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+66-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:42:17-81
+66-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ec74e24ec21b93c204b213e8e1c2f611\firebase-iid-19.0.1\AndroidManifest.xml:42:25-78
+67            </intent-filter>
+68        </receiver>
+69
+70        <provider
+70-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+71            android:name="com.google.firebase.provider.FirebaseInitProvider"
+71-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+72            android:authorities="com.example.appchat.firebaseinitprovider"
+72-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+73            android:exported="false"
+73-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+74            android:initOrder="100" />
+74-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c4b3ea6ae33ce50ab59c457e71165151\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+75
+76        <activity
+76-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+77            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+77-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\589c9aa23db5af641b2ff136b80bc42d\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd9baa2e773e9889eeec61f05254c4d6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd9baa2e773e9889eeec61f05254c4d6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fd9baa2e773e9889eeec61f05254c4d6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+84    </application>
+85
+86</manifest>

@@ -24,11 +24,11 @@ public final class R {
         private id() {}
 
         public static final int bottom = 0x7f08002e;
-        public static final int lay_down = 0x7f08008e;
-        public static final int left = 0x7f08008f;
-        public static final int pull_out = 0x7f0800bf;
-        public static final int right = 0x7f0800cb;
-        public static final int top = 0x7f080121;
+        public static final int lay_down = 0x7f08008f;
+        public static final int left = 0x7f080090;
+        public static final int pull_out = 0x7f0800c0;
+        public static final int right = 0x7f0800cc;
+        public static final int top = 0x7f080122;
     }
     public static final class styleable {
         private styleable() {}
