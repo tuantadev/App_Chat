@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.databinding:databinding-adapters:3.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f249902a901a68b6418eb8342f6686a3\databinding-adapters-3.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c7a5006d96326716044fecdbf49aeba3\databinding-runtime-3.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bb858beeccaa6a7468f8e20db6b6be8b\constraintlayout-2.0.0-alpha2\AndroidManifest.xml:2:1-11:12
@@ -54,20 +54,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\813e61f10c1c23329d78aae7e8262a6a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\da910c07650e0c3c3a56c921d8a62d8c\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f58c87ce76e107fcf036141b60c2282c\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml
-		ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml
-		ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-33:12
+		ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:1-34:12
 		INJECTED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:2:11-69
@@ -90,7 +90,7 @@ ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:10:5-31:19
+ADDED from F:\Land1812e\Project Android\App_Chat\app\src\main\AndroidManifest.xml:10:5-32:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bb858beeccaa6a7468f8e20db6b6be8b\constraintlayout-2.0.0-alpha2\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bb858beeccaa6a7468f8e20db6b6be8b\constraintlayout-2.0.0-alpha2\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\23e989389d623ddbded50da53ee3a66f\material-1.0.0\AndroidManifest.xml:22:5-20

@@ -28,6 +28,7 @@
         <activity android:name=".ui.chat.ShowImageFrag"/>
         <activity android:name=".ui.setting.user.ManagerUserProfileFrag"/>
         <activity android:name=".ui.setting.friends.SettingFriendActivity"/>
+        
     </application>
 
 </manifest>

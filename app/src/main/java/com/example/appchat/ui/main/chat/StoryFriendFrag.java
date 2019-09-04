@@ -18,6 +18,7 @@ import com.example.appchat.interact.CommonData;
 import com.example.appchat.interact.UserService;
 import com.example.appchat.model.response.BaseResponse;
 import com.example.appchat.model.response.StoryFriendResponse;
+import com.example.appchat.ui.chat.Chat;
 
 import java.util.List;
 
@@ -77,7 +78,7 @@ public class StoryFriendFrag extends Fragment implements StoryFriendAdapter.ISto
     @Override
     public void onClick(int pos) {
         Intent intent = new Intent();
-        intent.setClass(getContext(),ChatFrag.class);
+        intent.setClass(getContext(), Chat.class);
         intent.putExtra("FRIEND",storyFriendResponses.get(pos));
         startActivity(intent);
     }
