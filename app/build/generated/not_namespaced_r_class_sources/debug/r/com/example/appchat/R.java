@@ -6212,7 +6212,7 @@ public final class R {
     public static final int flip=0x7f080071;
     public static final int forever=0x7f080072;
     public static final int forget=0x7f080073;
-    public static final int frag_story_chat=0x7f080074;
+    public static final int frag_story_friend=0x7f080074;
     public static final int frame=0x7f080075;
     public static final int ghost_view=0x7f080076;
     public static final int glide_custom_view_target_tag=0x7f080077;
@@ -6499,7 +6499,7 @@ public final class R {
     public static final int frag_photo_image_in_chat=0x7f0b0037;
     public static final int frag_register=0x7f0b0038;
     public static final int frag_setting_friend_chat=0x7f0b0039;
-    public static final int frag_story_chat=0x7f0b003a;
+    public static final int frag_story_friend=0x7f0b003a;
     public static final int friend_chat=0x7f0b003b;
     public static final int item_receive_image=0x7f0b003c;
     public static final int item_send_image=0x7f0b003d;

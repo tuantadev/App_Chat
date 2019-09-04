@@ -10,22 +10,15 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
-import com.example.appchat.GlideApp;
 import com.example.appchat.R;
 import com.example.appchat.interact.CommonData;
-import com.example.appchat.model.response.StoryFriendResponse;
-import com.example.appchat.ui.chat.Chat;
 import com.example.appchat.ui.setting.user.ManagerUserProfileFrag;
 import com.google.android.material.tabs.TabLayout;
 
-import java.util.List;
-
-public class ChatFrag extends Fragment implements StoryFriendFrag.IStoryFriend,View.OnClickListener {
+public class ChatFrag extends Fragment implements View.OnClickListener {
     private ViewPager vp;
     private ImageView ava;
 
@@ -48,9 +41,13 @@ public class ChatFrag extends Fragment implements StoryFriendFrag.IStoryFriend,V
                 .error(R.drawable.default_ava)
                 .into(ava);
         vp.setAdapter(new ChatMainAdapter(getChildFragmentManager()));
-
+    getStory();
     }
-
+private void getStory(){
+        getFragmentManager().beginTransaction()
+                .add(R.id.story,new StoryFriendFrag(),StoryFriendFrag.class.getName())
+                .commit();
+}
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -75,10 +72,6 @@ public class ChatFrag extends Fragment implements StoryFriendFrag.IStoryFriend,V
                 .into(ava);
     }
 
-    @Override
-    public StoryFriendFrag getData() {
-        return new StoryFriendFrag();
-    }
 //    @Override
 //    public void onClick(int pos) {
 //        Intent intent = new Intent();

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar_story"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/default_ava"
+            app:civ_border_color="#536DFE"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tv_namestory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_avatar_story"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="Tuan" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -35,9 +35,8 @@ public class StoryFriendAdapter extends RecyclerView.Adapter<StoryFriendAdapter.
                     .into(holder.iv);
         } else {
             GlideApp.with(holder.iv)
-                    .load(R.drawable.default_ava)
+                    .load(storyChatReponse.getFriend_avatar())
                     .error(R.drawable.default_ava)
-                    .placeholder(R.drawable.default_ava)
                     .into(holder.iv);
         }
         holder.tv.setText(storyChatReponse.getFriend_nameofchat());

@@ -12,24 +12,24 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\7c28be271ce81a8126695cd5a83b9bfc\\media-1.0.0-rc02\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_back.png.flat",
         "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\drawable-xxxhdpi\\back.png"
+    },
+    {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -44,40 +44,40 @@
         "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\drawable-xxhdpi\\take_photo.png"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_photo.xml.flat",
-        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\photo.xml"
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_photo.xml.flat",
+        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\photo.xml"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\589c9aa23db5af641b2ff136b80bc42d\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_friend_chat.xml.flat",
-        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\friend_chat.xml"
-    },
-    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_friend_chat.xml.flat",
+        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\friend_chat.xml"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -116,16 +116,16 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\23e989389d623ddbded50da53ee3a66f\\material-1.0.0\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\7c28be271ce81a8126695cd5a83b9bfc\\media-1.0.0-rc02\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_bottom_navigation_item_background.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\23e989389d623ddbded50da53ee3a66f\\material-1.0.0\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\7c28be271ce81a8126695cd5a83b9bfc\\media-1.0.0-rc02\\res\\layout\\notification_template_big_media_custom.xml"
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -180,12 +180,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
@@ -240,12 +240,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\23e989389d623ddbded50da53ee3a66f\\material-1.0.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_box_edittext.xml.flat",
@@ -1428,10 +1428,6 @@
         "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\frag_chat_mess.xml"
     },
     {
-        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_frag_story_chat.xml.flat",
-        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\frag_story_chat.xml"
-    },
-    {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\23e989389d623ddbded50da53ee3a66f\\material-1.0.0\\res\\color\\mtrl_text_btn_text_color_selector.xml"
     },
@@ -1762,6 +1758,10 @@
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_frag_story_friend.xml.flat",
+        "source": "F:\\Land1812e\\Project Android\\App_Chat\\app\\src\\main\\res\\layout\\frag_story_friend.xml"
     },
     {
         "merged": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\res\\merged\\debug\\layout_frag_friend_chat.xml.flat",

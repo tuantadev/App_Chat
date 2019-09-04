@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -36,19 +34,17 @@ public class StoryFriendFrag extends Fragment implements StoryFriendAdapter.ISto
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.frag_story_chat,container,false);
+        return inflater.inflate(R.layout.frag_story_friend,container,false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         rc_storyFriend =view.findViewById(R.id.rc_story_friend);
-        rc_storyFriend.setLayoutManager(new LinearLayoutManager(getContext()));
-        rc_storyFriend.setAdapter(new StoryFriendAdapter(this));
+        rc_storyFriend.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
+        storyFriendAdapter = new StoryFriendAdapter(this);
+        rc_storyFriend.setAdapter(storyFriendAdapter);
         getStoryFriend();
-    }
-    public interface IStoryFriend{
-        StoryFriendFrag getData();
     }
     private void getStoryFriend(){
         userService = Common.getUserService();
@@ -56,9 +52,8 @@ public class StoryFriendFrag extends Fragment implements StoryFriendAdapter.ISto
             @Override
             public void onResponse(Call<BaseResponse<List<StoryFriendResponse>>> call, Response<BaseResponse<List<StoryFriendResponse>>> response) {
                 storyFriendResponses = response.body().getData();
-                storyFriendAdapter.notifyDataSetChanged();
+              storyFriendAdapter.notifyDataSetChanged();
             }
-
             @Override
             public void onFailure(Call<BaseResponse<List<StoryFriendResponse>>> call, Throwable t) {
                 t.printStackTrace();
