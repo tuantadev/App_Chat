@@ -2,8 +2,7 @@ package com.example.appchat.model.response;
 
 import java.io.Serializable;
 
-public class FriendResponse implements Serializable {
-
+public class FriendChated implements Serializable {
     private int friend_id;
     private String friend_nameofchat;
     private String friend_username;

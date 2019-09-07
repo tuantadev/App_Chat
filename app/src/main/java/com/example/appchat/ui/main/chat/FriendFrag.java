@@ -14,12 +14,11 @@ import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.R;
 import com.example.appchat.model.LastMess;
-import com.example.appchat.model.response.BaseResponse;
+import com.example.appchat.model.response.FriendChated;
 import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.interact.UserService;
 import com.example.appchat.model.response.MessageChatResponse;
 import com.example.appchat.ui.chat.Chat;
-import com.example.appchat.ui.main.chat.FriendAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +29,7 @@ import retrofit2.Response;
 public class FriendFrag extends Fragment implements FriendAdapter.IFriend {
 
     private RecyclerView rcFriend;
-    private List<FriendResponse> friendResponses;
+    private List<FriendChated> friendChateds;
     private FriendAdapter adapter;
     private  UserService userService;
     private List<MessageChatResponse> messageChatResponses;
@@ -48,35 +47,38 @@ public class FriendFrag extends Fragment implements FriendAdapter.IFriend {
         rcFriend.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new FriendAdapter(this);
         rcFriend.setAdapter(adapter);
-        getAllFriend();
+        getAllFriendChat();
     }
 
-    private void getAllFriend(){
+    private void getAllFriendChat(){
         userService = Common.getUserService();
         if (  CommonData.getInstance().getUserProfile() == null ){
             return;
         }
-        userService.getAllFriendOfUser(
-                CommonData.getInstance().getUserProfile().getId())
-                .enqueue(new Callback<BaseResponse<List<FriendResponse>>>() {
+        userService.getFriendSendedMess(CommonData.getInstance().getUserProfile().getId())
+                .enqueue(new Callback<List<FriendChated>>() {
                     @Override
-                    public void onResponse(Call<BaseResponse<List<FriendResponse>>> call, Response<BaseResponse<List<FriendResponse>>> response) {
-                        friendResponses = response.body().getData();
-//                        getAllLastMess();
+                    public void onResponse(Call<List<FriendChated>> call, Response<List<FriendChated>> response) {
+                        friendChateds = response.body();
                         adapter.notifyDataSetChanged();
+                        getAllLastMess();
                     }
 
                     @Override
-                    public void onFailure(Call<BaseResponse<List<FriendResponse>>> call, Throwable t) {
+                    public void onFailure(Call<List<FriendChated>> call, Throwable t) {
                         t.printStackTrace();
                     }
                 });
+
     }
 
     private void getAllLastMess(){
         lastMess = new ArrayList<>();
-        for (int i = 0; i < friendResponses.size(); i++) {
-            lastMess.add(new LastMess(CommonData.getInstance().getUserProfile().getId(),friendResponses.get(i).getFriendId()));
+        if (friendChateds == null){
+            return;
+        }
+        for (int i = 0; i < friendChateds.size(); i++) {
+            lastMess.add(new LastMess(CommonData.getInstance().getUserProfile().getId(),friendChateds.get(i).getFriend_id()));
         }
         userService.getAllLastMess(lastMess).enqueue(new Callback<List<MessageChatResponse>>() {
             @Override
@@ -93,15 +95,15 @@ public class FriendFrag extends Fragment implements FriendAdapter.IFriend {
 
     @Override
     public int getCount() {
-        if (friendResponses == null ){
+        if (friendChateds == null ){
             return 0;
         }
-        return friendResponses.size();
+        return friendChateds.size();
     }
 
     @Override
-    public FriendResponse getItem(int position) {
-        return friendResponses.get(position);
+    public FriendChated getItem(int position) {
+        return friendChateds.get(position);
     }
 
     @Override
@@ -110,7 +112,7 @@ public class FriendFrag extends Fragment implements FriendAdapter.IFriend {
         intent.setClass(getContext(),
                 Chat.class);
         intent.putExtra("FRIEND",
-                friendResponses.get(position));
+                 friendChateds.get(position));
         startActivity(intent);
     }
 
@@ -118,6 +120,5 @@ public class FriendFrag extends Fragment implements FriendAdapter.IFriend {
 //    public MessageChatResponse getMes(int pos) {
 //        return messageChatResponses.get(pos);
 //    }
-
 
 }

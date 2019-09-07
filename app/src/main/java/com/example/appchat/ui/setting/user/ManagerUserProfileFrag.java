@@ -2,31 +2,23 @@ package com.example.appchat.ui.setting.user;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
-import com.example.appchat.GlideApp;
 import com.example.appchat.R;
 import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.interact.UserService;
 import com.example.appchat.model.UserProfile;
-import com.example.appchat.model.request.ChangeAvatarRequest;
-import com.example.appchat.model.response.MessageChatResponse;
-import com.example.appchat.socket.SocketManager;
+import com.example.appchat.model.request.UpdateAvatar;
 import com.example.appchat.ui.gallery.ImageGalleryActivity;
-import com.google.gson.Gson;
+import com.example.appchat.ui.logout.ActivityLogout;
 
 import java.io.File;
 
@@ -44,6 +36,7 @@ public class ManagerUserProfileFrag extends AppCompatActivity implements View.On
     private ImageView ava;
     private TextView phonenumber;
     private UserService userService;
+    private LinearLayout logout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -63,6 +56,7 @@ public class ManagerUserProfileFrag extends AppCompatActivity implements View.On
                 .into(ava);
 
         userService = Common.getUserService();
+        findViewById(R.id.logout).setOnClickListener(this);
 
     }
 
@@ -79,6 +73,12 @@ public class ManagerUserProfileFrag extends AppCompatActivity implements View.On
                 break;
             case R.id.phone_setting:
                 break;
+            case R.id.logout:
+                Intent intent1 = new Intent();
+                intent1.setClass(this, ActivityLogout.class);
+                startActivity(intent1);
+                break;
+                default: break;
         }
     }
 
@@ -104,10 +104,10 @@ public class ManagerUserProfileFrag extends AppCompatActivity implements View.On
                     @Override
                     public void onResponse(Call<String> call, Response<String> response) {
                         System.out.println("image: " + response.body());
-                        ChangeAvatarRequest changeAvatarRequest = new ChangeAvatarRequest();
-                        changeAvatarRequest.setPath(Common.getLinkImage(response.body()));
-                        changeAvatarRequest.setId(CommonData.getInstance().getUserProfile().getId());
-                        userService.changeAvartar(changeAvatarRequest).enqueue(new Callback<UserProfile>() {
+                        UpdateAvatar updateAvatar = new UpdateAvatar();
+                        updateAvatar.setPath(Common.getLinkImage(response.body()));
+                        updateAvatar.setId(CommonData.getInstance().getUserProfile().getId());
+                        userService.changeAvartar(updateAvatar).enqueue(new Callback<UserProfile>() {
                             @Override
                             public void onResponse(Call<UserProfile> call, Response<UserProfile> response) {
                                 System.out.println(response.body().getAvatar());
@@ -130,4 +130,5 @@ public class ManagerUserProfileFrag extends AppCompatActivity implements View.On
                     }
                 });
     }
+
 }

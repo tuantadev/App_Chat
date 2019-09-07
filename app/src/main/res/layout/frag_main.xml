@@ -1,118 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#000000"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/frame"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:background="#1C1C1C"
-        android:layout_height="64dp">
+   <LinearLayout
+       android:layout_above="@+id/tab"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:id="@+id/frame"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:background="#1C1C1C"
+           android:layout_height="64dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/avatar_main"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:layout_width="56dp"
-            android:src="@drawable/default_ava"
-            android:scaleType="centerCrop"
-            android:layout_height="56dp" />
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/avatar_main"
+               android:layout_gravity="center"
+               android:layout_marginLeft="16dp"
+               android:layout_width="56dp"
+               android:src="@drawable/default_ava"
+               android:scaleType="centerCrop"
+               android:layout_height="56dp" />
 
-        <RelativeLayout
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+       </LinearLayout>
 
-            <ImageView
-                android:layout_width="42dp"
-                android:src="@drawable/circle_background"
-                android:layout_height="42dp" />
+       <LinearLayout
+           android:id="@+id/searching"
+           android:paddingTop="2dp"
+           android:paddingLeft="8dp"
+           android:paddingRight="8dp"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:background="@drawable/box_search"
+           android:layout_height="36dp">
 
-            <ImageView
-                android:id="@+id/camera"
-                android:layout_width="42dp"
-                android:src="@drawable/camera"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:layout_height="42dp" />
+           <ImageView
+               android:id="@+id/search_click"
+               android:layout_marginLeft="8dp"
+               android:layout_width="32dp"
+               android:layout_gravity="center"
+               android:src="@drawable/icon_search"
+               android:layout_height="32dp" />
 
-        </RelativeLayout>
+           <EditText
+               style="@style/editText" />
+       </LinearLayout>
 
-        <RelativeLayout
-            android:layout_weight="0"
-            android:layout_marginLeft="16dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+       <LinearLayout
+           android:id="@+id/story"
+           android:background="#000000"
+           android:layout_width="match_parent"
+           android:layout_height="64dp"
+           android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="42dp"
-                android:src="@drawable/circle_background"
-                android:layout_height="42dp" />
+       </LinearLayout>
 
-            <ImageView
-                android:layout_marginRight="8dp"
-                android:id="@+id/new_mess"
-                android:layout_width="42dp"
-                android:src="@drawable/note"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:layout_height="42dp" />
+       <androidx.viewpager.widget.ViewPager
+           android:id="@+id/vp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
 
-        </RelativeLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/searching"
-        android:paddingTop="2dp"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:background="@drawable/box_search"
-        android:layout_height="36dp">
-
-        <ImageView
-            android:id="@+id/search_click"
-            android:layout_marginLeft="8dp"
-            android:layout_width="32dp"
-            android:layout_gravity="center"
-            android:src="@drawable/icon_search"
-            android:layout_height="32dp" />
-
-        <EditText
-            style="@style/editText" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/story"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="#000000"
-        android:orientation="horizontal">
-    </LinearLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="match_parent"
-        android:layout_height="482dp"
-        android:orientation="vertical">
-
-    </androidx.viewpager.widget.ViewPager>
+   </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
         android:layout_alignParentBottom="true"
         app:tabSelectedTextColor="@color/white"
+        app:tabBackground="@color/color_tool_bar"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabIndicatorHeight="1dp"
+        app:tabTextColor="@color/gray_50"
+        app:tabMode="scrollable"
+        app:textAllCaps="false"
+        android:theme="@style/AppTheme"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="?actionBarSize">
 
     </com.google.android.material.tabs.TabLayout>
 
-</LinearLayout>
+</RelativeLayout>

@@ -1,10 +1,8 @@
 package com.example.appchat.ui.main;
 
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.appchat.R;
 import com.example.appchat.ui.main.chat.ChatFrag;
 

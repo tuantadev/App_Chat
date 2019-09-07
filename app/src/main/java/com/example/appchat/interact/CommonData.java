@@ -6,8 +6,8 @@ public class CommonData {
 
     private UserProfile userProfile;
     private static CommonData instance;
-
     public static CommonData getInstance(){
+
         if (instance == null ){
             instance = new CommonData();
         }

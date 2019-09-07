@@ -14,6 +14,7 @@ import java.io.File;
 
 public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ImageHolder> {
     private IGalleryAdapter inter;
+
     public GalleryAdapter(IGalleryAdapter inter){
         this.inter = inter;
     }

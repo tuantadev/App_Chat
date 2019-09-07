@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.appchat.R;
+import com.example.appchat.model.response.FriendChated;
 import com.example.appchat.model.response.FriendResponse;
 import com.example.appchat.model.response.MessageChatResponse;
 
@@ -31,23 +32,26 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
 
     @Override
     public void onBindViewHolder(@NonNull final HolderFriend holderFriend, int i) {
-        FriendResponse data = inter.getItem(i);
+        FriendChated data = inter.getItem(i);
 //        MessageChatResponse mess = inter.getMes(i);
         Glide.with(holderFriend.ivAvatar)
-                .load(data.getFriendAvatar())
+                .load(data.getFriend_avatar())
                 .into(holderFriend.ivAvatar);
 
         holderFriend.tvUsername.setText(
-                data.getFriendNameofchat()
+                data.getFriend_nameofchat()
         );
 //        if (mess == null)
 //        {
 //            return;
-//        }else if (mess.getType().equals("IMG")){
+//        }else
+//            if (mess.getType().equals("IMG")){
 //            holderFriend.lastMess.setText("");
-//        }else if (mess.getContent().length()>30){
+//        }else
+//            if (mess.getContent().length()>30){
 //            holderFriend.lastMess.setText(mess.getContent().substring(0,30)+"...");
 //        }else holderFriend.lastMess.setText(mess.getContent());
+
         holderFriend.itemView.setOnClickListener(
                 new View.OnClickListener() {
             @Override
@@ -64,7 +68,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.HolderFrie
 
     public interface IFriend{
         int getCount();
-        FriendResponse getItem(int position);
+        FriendChated getItem(int position);
         void onClickItem(int position);
 //        MessageChatResponse getMes(int pos);
     }

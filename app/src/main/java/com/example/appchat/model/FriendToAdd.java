@@ -2,8 +2,17 @@ package com.example.appchat.model;
 
 public class FriendToAdd {
 
-    private String avatar;
+    private int id;
     private String username;
+    private String avatar;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getAvatar() {
         return avatar;

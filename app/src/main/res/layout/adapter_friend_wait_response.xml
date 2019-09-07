@@ -11,7 +11,7 @@
         android:layout_height="72dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/avatar_another"
+            android:id="@+id/avatar_friends_wait"
             android:layout_width="64dp"
             android:src="@drawable/default_ava"
             android:layout_marginTop="4dp"
@@ -32,17 +32,22 @@
                 android:layout_width="wrap_content"
                 android:text=""
                 android:textColor="@color/white"
-                android:id="@+id/name_of_another"
+                android:id="@+id/name_of_friends_wait"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/btn_add_friend"
             android:layout_width="wrap_content"
-            android:src="@drawable/add"
+            android:id="@+id/btn_decline"
+            android:src="@drawable/decline"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/btn_accept_friends_wait"
+            android:layout_width="wrap_content"
+            android:src="@drawable/accept"
             android:padding="16dp"
             android:layout_height="match_parent"/>
 
     </LinearLayout>
-
 </LinearLayout>

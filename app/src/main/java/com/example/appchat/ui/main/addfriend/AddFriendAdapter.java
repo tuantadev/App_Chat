@@ -3,6 +3,7 @@ package com.example.appchat.ui.main.addfriend;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,14 +41,12 @@ public class AddFriendAdapter extends RecyclerView.Adapter<AddFriendAdapter.Hold
         holder.username.setText(
                 friend.getUsername()
         );
-        holder.itemView.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        inter.onClickItem(holder.getAdapterPosition());
-                    }
-                });
-
+        holder.addFriend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inter.onClickItem(holder.getAdapterPosition());
+            }
+        });
     }
 
     @Override
@@ -64,10 +63,12 @@ public class AddFriendAdapter extends RecyclerView.Adapter<AddFriendAdapter.Hold
     static class HoldeFriend extends RecyclerView.ViewHolder {
         private ImageView avatar;
         private TextView username;
+        private ImageView addFriend;
         public HoldeFriend(@NonNull View itemView) {
             super(itemView);
             avatar = itemView.findViewById(R.id.avatar_another);
             username = itemView.findViewById(R.id.name_of_another);
+            addFriend = itemView.findViewById(R.id.btn_add_friend);
         }
     }
 }

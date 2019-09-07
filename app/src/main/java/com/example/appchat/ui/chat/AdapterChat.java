@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.appchat.GlideApp;
 import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
@@ -73,10 +74,14 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             case SEND_TEXT:
                 SendViewHolder holder = (SendViewHolder) viewHolder;
                 holder.tv.setText(messageChatResponse.getContent());
+
                 break;
             case RECEIVE_TEXT:
                 ReceiveViewHolder holderText = (ReceiveViewHolder) viewHolder;
                 holderText.tv.setText(messageChatResponse.getContent());
+                Glide.with(holderText.im)
+                        .load(inter.img())
+                        .into(holderText.im);
                 break;
             case SEND_IMG:
                 final SendImageViewHolder sendImage = (SendImageViewHolder) viewHolder;
@@ -91,6 +96,7 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                         inter.itemCLick(sendImage.getAdapterPosition());
                     }
                 });
+
                 break;
             case RECEIVE_IMG:
                 final ReceiveImageViewHolder reImage = (ReceiveImageViewHolder) viewHolder;
@@ -105,6 +111,9 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                         inter.itemCLick(reImage.getAdapterPosition());
                     }
                 });
+                Glide.with(reImage.avatar)
+                        .load(inter.img())
+                        .into(reImage.avatar);
                 break;
             default:
                 break;
@@ -115,6 +124,7 @@ public class AdapterChat extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         int getCount();
         void itemCLick(int pos);
         MessageChatResponse getData(int pos);
+        String img();
     }
 
     @Override

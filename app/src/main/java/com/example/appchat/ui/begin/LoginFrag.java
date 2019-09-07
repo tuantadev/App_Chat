@@ -21,6 +21,7 @@ import com.example.appchat.model.response.BaseResponse;
 import com.example.appchat.model.UserProfile;
 import com.example.appchat.model.request.LoginRequest;
 import com.example.appchat.socket.SocketManager;
+import com.example.appchat.ui.ShareUtils;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -63,6 +64,7 @@ public class LoginFrag extends Fragment implements View.OnClickListener {
                             Toast.makeText(getContext(),
                                     response.body().getMessage(), Toast.LENGTH_SHORT).show();
                         } else {
+                            ShareUtils.saveUserProfile(getContext(),response.body().getData());
                             loginSuccess(response.body().getData());
                         }
                     }

@@ -14,6 +14,10 @@ import com.example.appchat.interact.Common;
 import com.example.appchat.interact.CommonData;
 import com.example.appchat.interact.UserService;
 import com.example.appchat.model.FriendToAdd;
+import com.example.appchat.model.request.AddFriendRequest;
+import com.example.appchat.model.response.AddFriendResponse;
+import com.example.appchat.model.response.BaseResponse;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +30,7 @@ public class OtherFriendFragment extends Fragment implements AddFriendAdapter.IA
     private RecyclerView rc;
     private AddFriendAdapter addFriendAdapter;
     private List<FriendToAdd> friendToAddList;
+    private List<AddFriendResponse> addFriendResponses;
     private UserService userService;
 
     @Nullable
@@ -52,7 +57,8 @@ public class OtherFriendFragment extends Fragment implements AddFriendAdapter.IA
         userService.getAllNotFriends(CommonData.getInstance().getUserProfile().getId()).enqueue(new Callback<List<FriendToAdd>>() {
             @Override
             public void onResponse(Call<List<FriendToAdd>> call, Response<List<FriendToAdd>> response) {
-
+                friendToAddList = response.body();
+                addFriendAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -75,6 +81,25 @@ public class OtherFriendFragment extends Fragment implements AddFriendAdapter.IA
 
     @Override
     public void onClickItem(int position) {
+        addFriend(position);
+    }
 
+    private void addFriend(int pos){
+        final AddFriendRequest addFriendRequest = new AddFriendRequest();
+        addFriendRequest.setSender_id(CommonData.getInstance().getUserProfile().getId());
+        addFriendRequest.setReceiver_id(friendToAddList.get(pos).getId());
+        addFriendRequest.setIs_send(1);
+        userService.requestAddFriend(addFriendRequest).enqueue(new Callback<BaseResponse>() {
+            @Override
+            public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
+                // update all_not_friend after remove Object after clicked add button
+                System.out.println(response.body().getMessage());
+                getFindFriend();
+            }
+            @Override
+            public void onFailure(Call<BaseResponse> call, Throwable t) {
+
+            }
+        });
     }
 }

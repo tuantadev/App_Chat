@@ -19,6 +19,7 @@ import com.example.appchat.ui.setting.user.ManagerUserProfileFrag;
 import com.google.android.material.tabs.TabLayout;
 
 public class ChatFrag extends Fragment implements View.OnClickListener {
+
     private ViewPager vp;
     private ImageView ava;
 
@@ -29,25 +30,21 @@ public class ChatFrag extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         vp = view.findViewById(R.id.vp);
         TabLayout tab = view.findViewById(R.id.tab);
         tab.setupWithViewPager(vp);
-
         ava = view.findViewById(R.id.avatar_main);
         Glide.with(ava)
                 .load(CommonData.getInstance().getUserProfile().getAvatar())
                 .error(R.drawable.default_ava)
                 .into(ava);
         vp.setAdapter(new ChatMainAdapter(getChildFragmentManager()));
-    getStory();
+        ava.setOnClickListener(this);
     }
-private void getStory(){
-        getFragmentManager().beginTransaction()
-                .add(R.id.story,new StoryFriendFrag(),StoryFriendFrag.class.getName())
-                .commit();
-}
+
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -72,11 +69,4 @@ private void getStory(){
                 .into(ava);
     }
 
-//    @Override
-//    public void onClick(int pos) {
-//        Intent intent = new Intent();
-//        intent.setClass(getContext(), Chat.class);
-//        intent.putExtra("CHAT", storyFriendResponses.get(pos));
-//        startActivity(intent);
-//    }
 }
