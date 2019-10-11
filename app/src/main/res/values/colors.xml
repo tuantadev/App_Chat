@@ -10,4 +10,6 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="topic">#0d0f0f</color>
+    <color name="color_tool_bar">#2979FF</color>
+    <color name="gray_50">#FAFAFA</color>
 </resources>

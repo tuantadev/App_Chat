@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.ernestoyaquello.dragdropswiperecyclerview:drag-drop-swipe-recyclerview:0.4.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3e2e690949e749e3f2d38554d1872ec/drag-drop-swipe-recyclerview-0.4.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3e2e690949e749e3f2d38554d1872ec/drag-drop-swipe-recyclerview-0.4.1/res" />
+      <root url="jar://D:/Program Files/Android-gradle/.gradle/caches/transforms-2/files-2.1/50044abcfcbef0c4299015f2e4011f2d/drag-drop-swipe-recyclerview-0.4.1/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Android-gradle/.gradle/caches/transforms-2/files-2.1/50044abcfcbef0c4299015f2e4011f2d/drag-drop-swipe-recyclerview-0.4.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ernestoyaquello.dragdropswiperecyclerview/drag-drop-swipe-recyclerview/0.4.1/6e62e9bf3635e765cd81c4462abc29ade62d1671/drag-drop-swipe-recyclerview-0.4.1-sources.jar!/" />
+      <root url="jar://D:/Program Files/Android-gradle/.gradle/caches/modules-2/files-2.1/com.ernestoyaquello.dragdropswiperecyclerview/drag-drop-swipe-recyclerview/0.4.1/6e62e9bf3635e765cd81c4462abc29ade62d1671/drag-drop-swipe-recyclerview-0.4.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

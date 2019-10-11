@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-common:18.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c4b3ea6ae33ce50ab59c457e71165151/firebase-common-18.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c4b3ea6ae33ce50ab59c457e71165151/firebase-common-18.0.0/res" />
+      <root url="jar://D:/Program Files/Android-gradle/.gradle/caches/transforms-2/files-2.1/d91e6a618283f3921b150aa21cf77e73/firebase-common-18.0.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Android-gradle/.gradle/caches/transforms-2/files-2.1/d91e6a618283f3921b150aa21cf77e73/firebase-common-18.0.0/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-common/18.0.0/5641fb3cd32dad4510c68182e669b337839143bc/firebase-common-18.0.0-javadoc.jar!/" />
+      <root url="jar://D:/Program Files/Android-gradle/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-common/18.0.0/5641fb3cd32dad4510c68182e669b337839143bc/firebase-common-18.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

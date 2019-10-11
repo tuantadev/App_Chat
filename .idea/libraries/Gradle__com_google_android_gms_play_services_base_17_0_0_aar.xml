@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-base:17.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/589c9aa23db5af641b2ff136b80bc42d/play-services-base-17.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/589c9aa23db5af641b2ff136b80bc42d/play-services-base-17.0.0/res" />
+      <root url="jar://D:/Program Files/Android-gradle/.gradle/caches/transforms-2/files-2.1/ceaf9a129f8ccf062cdd379f05a049a3/play-services-base-17.0.0/jars/classes.jar!/" />
+      <root url="file://D:/Program Files/Android-gradle/.gradle/caches/transforms-2/files-2.1/ceaf9a129f8ccf062cdd379f05a049a3/play-services-base-17.0.0/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-base/17.0.0/d2c4415b10482b4829dd3708f5391f637ed5816/play-services-base-17.0.0-javadoc.jar!/" />
+      <root url="jar://D:/Program Files/Android-gradle/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-base/17.0.0/d2c4415b10482b4829dd3708f5391f637ed5816/play-services-base-17.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

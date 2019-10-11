@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "E:\\Android\\Land1812e\\Project Android\\Appchatfinish\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8c8a21273dfcd2f78d4161682736510e\\core-1.0.1\\res\\values-v16\\values-v16.xml",
+                    "source": "D:\\Program Files\\Android-gradle\\.gradle\\caches\\transforms-2\\files-2.1\\d375a18d05e24e66d77709f6863c689c\\core-1.0.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1270462eedc7bf760325ce030897ec30\\appcompat-1.0.2\\res\\values-v16\\values-v16.xml",
+                    "source": "D:\\Program Files\\Android-gradle\\.gradle\\caches\\transforms-2\\files-2.1\\750b7b2b4898fa70c0985966489aeed6\\appcompat-1.0.2\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

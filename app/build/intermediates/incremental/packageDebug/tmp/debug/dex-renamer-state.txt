@@ -1,4 +1,4 @@
-#Wed Sep 04 15:47:21 ICT 2019
-base.0=F\:\\Land1812e\\Project Android\\App_Chat\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sat Oct 12 00:31:02 ICT 2019
+base.0=E\:\\Android\\Land1812e\\Project Android\\Appchatfinish\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
